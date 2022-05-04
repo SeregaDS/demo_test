@@ -1,0 +1,56 @@
+<header class="header" id="home">
+  <div class="header__wrapper">
+    <!-- Mobile menu  -->
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-menu__button-close" type="button" aria-expanded="false" data-menu-close>
+        <svg class="mobile-menu__close" aria-label="Переключатель меню" width="14" height="14">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__overlay">
+        <button class="mobile-menu__btn-buy" type="button">
+          <span class="mobile-menu__btn-meta">Buy now</span>
+          <svg class="mobile-menu__btn-icon" width="7" height="16">
+            <use href="./images/icons.svg#icon-btn-icon"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#home" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#products" class="mobile-menu__link">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#advantages" class="mobile-menu__link">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contacts" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo"><img src="./images/logo1x.png" alt="" /></div>
+        <button class="mobile-menu__button-open" type="button" aria-expanded="false" data-menu-open>
+          <svg class="mobile-menu__burger" aria-label="Переключатель меню" width="20" height="12">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <h1 class="header__title">
+          ice cream <br />
+          made with <br /><span class="header__title--color-fz">passion</span>
+        </h1>
+        <div class="header__buttons">
+          <a class="header__btn" href="#products">Products</a
+          ><a class="header__btn header__btn--secondary" href="#about">How it's made?</a>
+        </div>
+        <div class="header__image"><img src="./images/icecream.png" alt="icecream" /></div>
+      </div>
+    </div>
+  </div>
+</header>
