@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: $bgc-white-color;
+  color: $text-black-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  border-width: 0;
+}
+
+// font-family: 'Titan One', cursive;
