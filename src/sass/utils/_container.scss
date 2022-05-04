@@ -1,0 +1,39 @@
+.container {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 704px;
+  }
+  .container-modified {
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 732px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1248px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container-modified {
+    width: 1248px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
