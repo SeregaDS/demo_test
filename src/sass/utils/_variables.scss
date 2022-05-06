@@ -1,17 +1,22 @@
-$main-text-color: #907e82;
-$text-white-color: #ffffff;
-$text-black-color: #000000;
-$accent-pink-color: #ffa5ba;
-$accent-red-color: #d41443;
-$footer-line-color: #e1e1e1;
+$main-text-color-907E82: #907e82;
+$text-white-color-FFFFFF: #ffffff;
+$text-black-color-000000: #000000;
+$accent-pink-color-FFA5BA: #ffa5ba;
+$accent-red-color-D41443: #d41443;
+$footer-line-color-E1E1E1: #e1e1e1;
 
-$bgc-white-color: #ffffff;
-$bgc-main-color: #fff5f6;
-$bgc-hero-color: #ffb8ca;
-$bgc-testimonials: #fafafa;
+$bgc-white-color-FFFFFF: #ffffff;
+$bgc-main-color-FFF5F6: #fff5f6;
+$bgc-hero-color-FFB8CA: #ffb8ca;
+$bgc-testimonials-FAFAFA: #fafafa;
 
-$bgc-red-item-hover: #c7133e;
-$bgc-white-item-hover: #ecebeb;
+$bgc-red-item-hover-C7133E: #c7133e;
+$bgc-white-item-hover-ECEBEB: #ecebeb;
 
 $shadow-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
 $typical-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+$typical-transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$typical-transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$typical-transition-background: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$typical-transition-boxshadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
