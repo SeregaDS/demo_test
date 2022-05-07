@@ -7,6 +7,7 @@
     background-color: $bgc-menu-E17992;
     height: 100vh;
     padding-top: 20px;
+    padding-bottom: 20px;
     }
     
     .menu-close {
@@ -88,4 +89,13 @@
         &:focus {
             color: $accent-red-color-D41443;
         }
+}
+.socials__list {
+    margin-top: auto;
+    @include center;
+}
+
+.socials__icon {
+    width: 34px;
+    height: 34px;
 }
