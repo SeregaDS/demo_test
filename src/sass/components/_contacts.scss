@@ -1,3 +1,45 @@
 .contacts {
   width: 100%;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+  }
+  &__title {
+    overflow: hidden;
+    color: aqua;
+  }
+
+  &__list {
+    background-color: var(#ffffff);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    letter-spacing: 0.04em;
+
+    color: var(#000000);
+  }
+
+  &__time {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    color: var(#ffa5ba);
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+
+    color: var(#907e82);
+  }
 }
