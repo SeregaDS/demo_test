@@ -1,9 +1,6 @@
 .contacts {
   width: 100%;
-
-  &__container {
-    background: linear-gradient(#ffffff, #fff5f6);
-  }
+  background: linear-gradient(#ffffff, #fff5f6);
 
   &__title {
     @extend %visually-hidden;
@@ -33,12 +30,21 @@
     background-color: $bgc-white-color-FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    padding: 40px;
+    padding: 40px 32px;
+    margin-bottom: 20px;
+
+    @include mq(tablet) {
+      margin: 0;
+    }
+
+    @include mq(desktop) {
+      padding: 19px 40px 40px 40px;
+    }
   }
 
   &__company-cafe {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.86;
 
     text-align: center;
@@ -48,12 +54,20 @@
 
     background-color: #f0d1a5;
     border-radius: 6px;
-    padding: 4px 16px;
+    padding: 0px 16px;
+
+    width: 80px;
+    height: 16px;
+
+    @include mq(tablet) {
+      font-size: 16px;
+      padding: 4px 16px;
+    }
   }
 
   &__company-food {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.86;
 
     text-align: center;
@@ -63,43 +77,77 @@
 
     background-color: #c2e297;
     border-radius: 6px;
-    padding: 4px 16px;
+    padding: 0px 16px;
+
+    @include mq(tablet) {
+      font-size: 16px;
+      padding: 4px 16px;
+    }
   }
 
   &__subtitle {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.86;
 
     letter-spacing: 0.04em;
 
     color: $text-black-color-000000;
     margin-bottom: 8px;
-    margin-top: 32px;
+    margin-top: 20px;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__text {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.83;
+    font-size: 12px;
+    line-height: 1.5;
 
     letter-spacing: 0.04em;
 
     color: $main-text-color-907E82;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 
     border-bottom: 1px solid $footer-line-color-E1E1E1;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.66;
+      margin-bottom: 32px;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.83;
+    }
   }
 
   &__subtitle-schedule {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.86;
 
     letter-spacing: 0.04em;
 
     color: $text-black-color-000000;
+
+    @include mq(tablet) {
+      font-size: 14px;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__time {
@@ -108,65 +156,115 @@
     line-height: 1.86;
 
     color: $accent-pink-color-FFA5BA;
+
+    @include mq(tablet) {
+      font-size: 14px;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__link {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.83;
+    line-height: 1.5;
     text-decoration: none;
     color: $main-text-color-907E82;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__schedule {
     position: relative;
-    margin: 32px 0px;
+    margin: 24px 0px;
     border-bottom: 1px solid $footer-line-color-E1E1E1;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
+
+    @include mq(tablet) {
+      margin: 32px 0px;
+      padding-bottom: 32px;
+    }
   }
 
   &__btn {
     display: flex;
-    justify-content: center;
-    padding-bottom: 120px;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 48px;
+    margin-bottom: 10px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 120px;
+      margin-bottom: 0;
+    }
   }
 
   &__btn-locations {
-    background-color: $accent-red-color-D41443;
-    padding: 11px 35px;
-    border-radius: 22px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: $bgc-white-color-FFFFFF;
+    background-color: $accent-red-color-D41443;
+    border-radius: 22px;
     text-align: center;
-    margin-right: 15px;
-
-    color: $text-white-color-FFFFFF;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    padding-left: 17px;
+    padding-right: 17px;
+    max-width: 210px;
+    height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       cursor: pointer;
       background-color: $bgc-red-item-hover-C7133E;
     }
+
+    @include mq(tablet) {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
   }
 
   &__btn-text {
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 1.31;
   }
 
   &__btn-franchise {
-    background-color: $text-white-color-FFFFFF;
-    padding: 11px 35px;
-    border-radius: 22px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: $accent-red-color-D41443;
+    background-color: $bgc-white-color-FFFFFF;
+    border-radius: 22px;
     text-align: center;
 
-    color: $accent-red-color-D41443;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 210px;
+    height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -175,10 +273,34 @@
     }
   }
 
-  &__btn-icon {
-    margin-left: 14px;
-    fill: $bgc-white-color-FFFFFF;
-    width: 7px;
-    height: 10px;
+  &__icon-locations {
+    margin-left: 8px;
+    stroke: $bgc-white-color-FFFFFF;
+    width: 5px;
+    height: 8px;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__icon-franchise {
+    margin-left: 8px;
+    stroke: $accent-red-color-D41443;
+    width: 5px;
+    height: 8px;
+
+    @include mq(tablet) {
+      margin-left: 13px;
+    }
+
+    @include mq(desktop) {
+      margin-left: 14px;
+    }
   }
 }
