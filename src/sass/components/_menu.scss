@@ -1,13 +1,22 @@
-// .overlay {
-//     background-color: rgba(128, 128, 128, 0.247);
-//     height: 100vh;
-// }
+.overlay {
+    // background-image: linear-gradient(to right, rgb(244, 67, 54, 0.3) 15%,
+    //         rgb(9, 121, 43, 0.3) 40%,
+    //         rgb(0, 185, 255, 0.3) 65%,
+    //         rgb(255, 184, 0, 0.3));
+    background-image: linear-gradient(to right, rgb(255, 245, 246, 0.2), rgb(255, 184, 0, 0.2));
+    height: 100%;
+}
 
 .menu {
     background-color: $bgc-menu-E17992;
     height: 100vh;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 15px;
+        overflow-y: scroll;
+    
+        @include mq (mobile) {
+            width: 40vw;
+            margin-left: auto;
+        }
     }
     
     .menu-close {
@@ -37,7 +46,7 @@
             border-radius: 22px;
             text-align: center;
 
-    margin-left: auto;
+        margin-left: auto;
         margin-right: auto;
         margin-bottom: 19px;
     
@@ -82,7 +91,6 @@
         color: $text-white-color-FFFFFF;
         padding-top: 13px;
         padding-bottom: 11px;
-        padding-left: 20px;
         transition: $typical-transition-color;
     
         &:hover,
@@ -91,11 +99,38 @@
         }
 }
 .socials__list {
-    margin-top: auto;
-    @include center;
+        @include center;
+        margin-top: 150px;
 }
 
+.socials__item:not(:last-child) {
+    margin-right: 30px;
+}
 .socials__icon {
+    fill: rgb(255, 0, 0);
     width: 34px;
     height: 34px;
+    transition: $typical-transition-fill;
+    
+        .socials__link:hover & {
+            fill: $accent-red-color-D41443
+        }
+    }
+    
+    .tel-number {
+        @include center;
+        margin-top: 20px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.86;
+    
+        @include mq (mobile) {
+            font-size: 2vw;
+        }
+    }
+    
+    .tel-number__link {
+        color: $accent-red-color-D41443;
+        padding-left: 5px;
 }
