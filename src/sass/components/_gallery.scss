@@ -1,27 +1,76 @@
 .gallery {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(
+    to bottom,
+    $bgc-main-color-FFF5F6 42%,
+    $text-white-color-FFFFFF 58%
+  );
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__list {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 115px;
+    padding-right: 115px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
   &__title {
     @extend %visually-hidden;
   }
   &__item {
     position: relative;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    &:nth-child(1) {
+      top: 142px;
+    }
+    &:nth-child(2),
+    &:nth-child(4) {
+      top: 87px;
+    }
+    &:nth-child(5) {
+      top: 53px;
+    }
+    &:nth-child(6) {
+      top: 154px;
+    }
+    &:nth-child(7) {
+      left: 145px;
+      bottom: 57px;
+    }
+    &:nth-child(8) {
+      left: 145px;
+    }
+    &:nth-child(9) {
+      left: 290px;
+      bottom: 57px;
+    }
+    &:nth-child(10) {
+      left: 290px;
+      bottom: 90px;
+    }
   }
   &__image {
+    display: block;
     object-fit: cover;
-    transition: transform 250ms linear;
+    transition: $typical-transition-transform;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
-  &__image:hover {
-    transform: scale(1.03);
-  }
+
   &__link {
     display: block;
     text-decoration: none;
     height: 100%;
-  }
-  &__link:hover {
-    cursor: zoom-in;
+    &:hover {
+      cursor: zoom-in;
+    }
   }
 }
