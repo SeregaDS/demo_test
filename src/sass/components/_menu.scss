@@ -1,13 +1,91 @@
-.overlay {
-    background-color: rgba(128, 128, 128, 0.247);
-    height: 100vh;
-}
+// .overlay {
+//     background-color: rgba(128, 128, 128, 0.247);
+//     height: 100vh;
+// }
 
 .menu {
     background-color: $bgc-menu-E17992;
     height: 100vh;
+    padding-top: 20px;
+    }
+    
+    .menu-close {
+        @include center;
+        background-color: transparent;
+        margin-right: 20px;
+        margin-left: auto;
+        margin-bottom: 26px;
+    }
+    
+    .menu-close__icon {
+        width: 13px;
+        height: 14px;
+        stroke: $bgc-white-color-FFFFFF;
+        transition: stroke 250ms $typical-cubic, transform 500ms $typical-cubic;
+    
+        .menu-close:hover &,
+        .menu-close:focus & {
+            stroke: $accent-red-color-D41443;
+            transform: rotate(90deg);
+        }
 }
+        .menu-button {
+            @include center;
+            color: $accent-red-color-D41443;
+            background-color: $bgc-white-color-FFFFFF;
+            border-radius: 22px;
+            text-align: center;
 
-.menu__close {
-    stroke: #000
+    margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 19px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+    
+        padding-left: 49px;
+        padding-right: 49px;
+        max-width: 210px;
+        height: 44px;
+        transition: $typical-transition-background, transform 250ms $typical-cubic;
+    
+        &:hover,
+        &:focus {
+            background-color: #ECEBEB;
+            transform: scale(1.1)
+        }
+    }
+    
+    .menu-button__icon {
+        margin-left: 16px;
+        width: 5px;
+        height: 8px;
+        stroke: $accent-red-color-D41443;
+    }
+    
+    .menu-nav {
+        @include font-menu (700, 14px, 1.29)
+    }
+    
+    .menu-nav__item {
+        border-top: 1px solid #E18298;
+    
+        &:last-child {
+            border-bottom: 1px solid #E18298;
+        }
+    }
+    
+    .menu-nav__link {
+        display: block;
+        color: $text-white-color-FFFFFF;
+        padding-top: 13px;
+        padding-bottom: 11px;
+        padding-left: 20px;
+        transition: $typical-transition-color;
+    
+        &:hover,
+        &:focus {
+            color: $accent-red-color-D41443;
+        }
 }
