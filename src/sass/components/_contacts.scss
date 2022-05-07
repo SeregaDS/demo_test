@@ -2,19 +2,42 @@
   width: 100%;
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 32px;
+    background: linear-gradient(#ffffff, #fff5f6);
   }
+
   &__title {
     overflow: hidden;
     color: aqua;
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+
     background-color: var(#ffffff);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+  }
+
+  &__item {
+    margin: 40px;
+  }
+
+  &__company {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(#ffffff);
+
+    background-color: #f0d1a5;
+    border-radius: 6px;
+
+    margin-bottom: 32px;
   }
 
   &__subtitle {
@@ -25,6 +48,27 @@
     letter-spacing: 0.04em;
 
     color: var(#000000);
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+
+    letter-spacing: 0.04em;
+
+    color: var(#907e82);
+    margin-bottom: 32px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px solid var(#e1e1e1);
+    }
   }
 
   &__time {
@@ -41,5 +85,18 @@
     line-height: 1.83;
 
     color: var(#907e82);
+  }
+
+  &__schedule {
+    position: relative;
+    margin: 32px 0px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px solid var(#e1e1e1);
+    }
   }
 }
