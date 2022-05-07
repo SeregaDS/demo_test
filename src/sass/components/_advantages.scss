@@ -1,3 +1,23 @@
 .advantages {
-  width: 100%;
+    width: 100%;
+}
+
+.advantages__numbers {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+}
+
+.advantages__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
 }
