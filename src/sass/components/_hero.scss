@@ -1,0 +1,92 @@
+.hero {
+  background-color: #ffb8ca;
+}
+
+.hero__container {
+  //   height: 500px;
+
+  max-width: 100%;
+
+  &::before {
+    content: '';
+    top: 73px;
+    left: 35px;
+    width: 346px;
+    height: 344px;
+    background-color: $accent-pink-color-FFA5BA;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  @include mq(desktop) {
+    max-width: 1600px;
+  }
+}
+.hero__content {
+}
+.hero__title {
+  padding-top: 136px;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 20px;
+
+  @include fonts(400, 26px, 1.15);
+  font-family: 'Titan One';
+
+  text-transform: uppercase;
+
+  color: $text-white-color-FFFFFF;
+}
+.hero__title--red {
+  @include fonts(400, 58px, 0.91);
+  font-family: 'Titan One';
+
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.hero__buttons-menu {
+}
+
+.hero__button {
+  position: relative;
+  z-index: 3;
+  @include fonts(400, 8px, 1.25);
+
+  color: $text-white-color-FFFFFF;
+  padding: 10px 24px;
+  background-color: $accent-red-color-D41443;
+  border-radius: 20px;
+  transition: $typical-transition-background;
+
+  &:hover,
+  &:focus {
+    background-color: $bgc-red-item-hover-C7133E;
+  }
+}
+.hero__button--light {
+  background-color: $text-white-color-FFFFFF;
+  color: $accent-red-color-D41443;
+  transition: $typical-transition-background;
+  &:hover,
+  &:focus {
+    background-color: $bgc-white-item-hover-ECEBEB;
+  }
+}
+.hero__image-icecream {
+  position: absolute;
+  bottom: 120px;
+  left: 120px;
+  z-index: 2;
+}
+.hero__image-milk {
+}
+.hero__image-girl {
+}
+.hero__text {
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
