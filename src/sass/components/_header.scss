@@ -4,3 +4,14 @@
   font-size: 54px;
   background-color: #e1e1e1;
 }
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $accent-pink-color-FFA5BA;
+}
+
+.btn__menu {
+  background-color: $accent-pink-color-FFA5BA;
+}
