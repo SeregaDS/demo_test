@@ -3,31 +3,36 @@
   background-color: $accent-pink-color-FFA5BA;
   padding-top: 8px;
 
-    @include mq (tablet){
-      padding-top: 32px;
-    }
+  @include mq (tablet) {
+    padding-top: 32px;
+  }
 
-    @include mq (desktop) {
-      padding-top: 36px;
-}}
+  @include mq (desktop) {
+    padding-top: 36px;
+  }
+}
 
 .header__container {
   display: flex;
   align-items: center;
+
   @include mq (mobile-only) {
-  justify-content: space-between; 
-}}
+    justify-content: space-between;
+  }
+}
 
 .header-logo__link {
-  @include mq (desktop){
-  margin-right: 135px;
-}}
+  @include mq (desktop) {
+    margin-right: 135px;
+  }
+}
 
 .header-btn {
-  @include mq (tablet){
-  display: flex;
-  margin-left: auto;
-}}
+  @include mq (tablet) {
+    display: flex;
+    margin-left: auto;
+  }
+}
 
 .btn__menu {
   background-color: $accent-pink-color-FFA5BA;
@@ -46,27 +51,29 @@
 
   @include mq (tablet) {
 
-  @include center;
-  color: $accent-red-color-D41443;
-  background-color: $bgc-white-color-FFFFFF;
-  border-radius: 22px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  padding-left: 37px;
-  padding-right: 37px;
-  height: 44px;
+    @include center;
+    color: $accent-red-color-D41443;
+    background-color: $bgc-white-color-FFFFFF;
+    border-radius: 22px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    padding-left: 37px;
+    padding-right: 37px;
+    height: 44px;
 
-  @include mq (tablet-only) {
-    margin-left: 16px;
+    @include mq (tablet-only) {
+      margin-left: 16px;
+    }
+
+
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+    }
   }
-  
-
-   &:hover,
-   &:focus {
-     background-color: #ECEBEB;
-}}}
+}
 
 .btn-buy__icon {
   margin-left: 16px;
@@ -78,36 +85,37 @@
 
 
 .nav {
-    
+
 
   @include mq (notDesktop) {
     display: none;
   }
-    @include font-menu (700, 16px, 1.31)
+
+  @include font-menu (700, 16px, 1.31)
 }
-    
+
 .nav__list {
   display: flex;
   align-items: center;
-  }
+}
 
-  .nav__item {
-    margin-right: 35px;
-    
-    &:last-child {
-      margin-right: 0px;
-      }
+.nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0px;
   }
-    
+}
+
 .nav__link {
   display: block;
   color: $text-white-color-FFFFFF;
   padding-top: 13px;
   padding-bottom: 11px;
   transition: $typical-transition-color;
-    
-    &:hover,
-    &:focus {
-     color: $accent-red-color-D41443;
+
+  &:hover,
+  &:focus {
+    color: $accent-red-color-D41443;
   }
- }
+}
