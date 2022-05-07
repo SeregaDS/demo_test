@@ -1,3 +1,14 @@
 .header {
   width: 100%;
 }
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $accent-pink-color-FFA5BA;
+}
+
+.btn__menu {
+  background-color: $accent-pink-color-FFA5BA;
+}
