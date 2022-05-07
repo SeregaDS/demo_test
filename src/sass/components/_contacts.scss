@@ -42,7 +42,7 @@
     }
   }
 
-  &__company-cafe {
+  &__cafe {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -65,7 +65,7 @@
     }
   }
 
-  &__company-food {
+  &__food {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -132,7 +132,7 @@
     }
   }
 
-  &__subtitle-schedule {
+  &__days {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -147,6 +147,14 @@
 
     @include mq(desktop) {
       font-size: 16px;
+    }
+  }
+
+  &__items {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -194,23 +202,23 @@
       padding-bottom: 32px;
     }
   }
+}
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 48px;
-    margin-bottom: 10px;
+.btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 48px;
+  margin-bottom: 10px;
 
-    @include mq(tablet) {
-      flex-direction: row;
-      justify-content: center;
-      padding-bottom: 120px;
-      margin-bottom: 0;
-    }
+  @include mq(tablet) {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 120px;
+    margin-bottom: 0;
   }
 
-  &__btn-locations {
+  &__locations {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,13 +249,13 @@
     }
   }
 
-  &__btn-text {
+  &__text {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
   }
 
-  &__btn-franchise {
+  &__franchise {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,35 +280,35 @@
       background-color: $bgc-white-item-hover-ECEBEB;
     }
   }
+}
 
-  &__icon-locations {
-    margin-left: 8px;
-    stroke: $bgc-white-color-FFFFFF;
-    width: 5px;
-    height: 8px;
+.icon__locations {
+  margin-left: 8px;
+  stroke: $bgc-white-color-FFFFFF;
+  width: 5px;
+  height: 8px;
 
-    @include mq(tablet) {
-      font-size: 14px;
-      line-height: 1.83;
-    }
-
-    @include mq(desktop) {
-      font-size: 16px;
-    }
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 1.83;
   }
 
-  &__icon-franchise {
-    margin-left: 8px;
-    stroke: $accent-red-color-D41443;
-    width: 5px;
-    height: 8px;
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}
 
-    @include mq(tablet) {
-      margin-left: 13px;
-    }
+.icon__franchise {
+  margin-left: 8px;
+  stroke: $accent-red-color-D41443;
+  width: 5px;
+  height: 8px;
 
-    @include mq(desktop) {
-      margin-left: 14px;
-    }
+  @include mq(tablet) {
+    margin-left: 13px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 14px;
   }
 }
