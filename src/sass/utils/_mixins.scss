@@ -1,7 +1,11 @@
 @mixin mq($screen) {
     $mobile: 480px;
     $tablet: 768px;
+<<<<<<< Updated upstream
     $desktop: 1280px;
+=======
+    $desktop: 1200px;
+>>>>>>> Stashed changes
 
     @if $screen==mobile-only {
         @media screen and (max-width: #{$tablet - 0.02}) {
