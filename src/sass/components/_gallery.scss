@@ -13,47 +13,212 @@
   &__list {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 115px;
-    padding-right: 115px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    @media screen and (min-width: 480px) {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
   }
   &__title {
     @extend %visually-hidden;
   }
   &__item {
     position: relative;
-    margin-right: 7px;
-    margin-bottom: 7px;
     &:nth-child(1) {
-      top: 142px;
+      width: calc((100% - 14px) * 0.33);
+      @media screen and (min-width: 480px) {
+        width: 140px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 257px;
+        left: 132px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        top: 142px;
+        left: 0;
+      }
     }
-    &:nth-child(2),
+    &:nth-child(2) {
+      width: calc((100% - 14px) * 0.66 + 7px);
+      left: 7px;
+      @media screen and (min-width: 480px) {
+        width: 286px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        left: 139px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        top: 87px;
+        left: 7px;
+      }
+    }
+    &:nth-child(3) {
+      width: calc((100% - 14px) * 0.33);
+      bottom: calc(33vw - 24px);
+      @media screen and (min-width: 480px) {
+        width: 140px;
+        bottom: 140px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        right: 382px;
+        bottom: -132px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 284px;
+        left: 14px;
+        bottom: 0;
+      }
+    }
     &:nth-child(4) {
-      top: 87px;
+      width: calc((100% - 14px) * 0.66 + 7px);
+      right: calc(33vw - 21px);
+      top: 7px;
+      @media screen and (min-width: 480px) {
+        width: 286px;
+        right: 140px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        top: 132px;
+        right: 111px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        top: 87px;
+        right: -21px;
+      }
     }
     &:nth-child(5) {
-      top: 53px;
+      width: calc((100% - 14px) * 0.33);
+      left: calc(66vw - 33px);
+      bottom: calc(66vw - 47px);
+      @media screen and (min-width: 480px) {
+        width: 140px;
+        bottom: 279px;
+        left: 293px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        bottom: 125px;
+        left: 528px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        bottom: -53px;
+        left: 28px;
+      }
     }
     &:nth-child(6) {
-      top: 154px;
+      width: calc((100% - 14px) * 0.33);
+      left: calc(33vw - 10px);
+      bottom: calc(33vw - 30px);
+      @media screen and (min-width: 480px) {
+        width: 140px;
+        bottom: 133px;
+        left: 154px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        left: -125px;
+        bottom: -7px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        bottom: -154px;
+        left: 35px;
+      }
     }
     &:nth-child(7) {
-      left: 145px;
-      bottom: 57px;
+      width: calc((100% - 14px) * 0.33);
+      right: calc(66vw - 48px);
+      top: 14px;
+      @media screen and (min-width: 480px) {
+        width: 140px;
+        right: 279px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        right: 118px;
+        top: 7px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        right: -145px;
+        top: -50px;
+      }
     }
     &:nth-child(8) {
-      left: 145px;
+      width: calc((100% - 14px) * 0.66 + 7px);
+      left: calc(33vw - 16px);
+      bottom: calc(33vw - 19px);
+      @media screen and (min-width: 480px) {
+        width: 286px;
+        left: 147px;
+        bottom: 144px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 257px;
+        left: -111px;
+        bottom: -7px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        left: 152px;
+        bottom: -7px;
+      }
     }
     &:nth-child(9) {
-      left: 290px;
-      bottom: 57px;
+      width: calc((100% - 14px) * 0.33);
+      top: 2px;
+      right: calc(66vw - 41px);
+      @media screen and (min-width: 480px) {
+        width: 140px;
+        right: 286px;
+        top: 2px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        right: -528px;
+        top: -250px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        right: -305px;
+        top: -50px;
+      }
     }
     &:nth-child(10) {
-      left: 290px;
-      bottom: 90px;
+      width: calc((100% - 14px) * 0.33);
+      bottom: calc(33vw - 24px);
+      @media screen and (min-width: 480px) {
+        width: 140px;
+        bottom: 138px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 125px;
+        bottom: 118px;
+        left: 7px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 138px;
+        left: 312px;
+        bottom: 84px;
+      }
     }
   }
   &__image {
