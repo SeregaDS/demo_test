@@ -1,1 +1,72 @@
-<div class="backdrop"></div>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close" data-modal-close>
+      <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/icons.svg#closemodal"></use>
+      </svg>
+    </button>
+    <form class="join-form" autocomplete="off">
+      <p class="join-form__title">Lorem ipsum dolor sit.</p>
+      <label class="join-form__label">
+        <input
+          class="join-form__input"
+          type="text"
+          name="user-name"
+          placeholder=" "
+          id="name"
+          autofocus
+        />
+        <svg class="join-form__icon" width="18" height="18">
+          <use href="./images/icons.svg#name"></use>
+        </svg>
+        <span class="join-form__name">Name</span>
+      </label>
+      <label class="join-form__label" for="tel">
+        <input class="join-form__input" type="tel" name="tel" placeholder=" " id="tel" />
+        <svg class="join-form__icon" width="18" height="18">
+          <use href="./images/icons.svg#tel"></use>
+        </svg>
+        <span class="join-form__name">Tel-number</span></label
+      >
+      <label class="join-form__label" for="mail">
+        <input class="join-form__input" type="email" name="mail" placeholder=" " id="mail" />
+        <svg class="join-form__icon" width="18" height="18">
+          <use href="./images/icons.svg#mail"></use></svg
+        ><span class="join-form__name">E-Mail</span></label
+      >
+      <label class="join-form__label" for="comment">
+        <textarea
+          class="join-form__inputtext"
+          placeholder=" "
+          name="comment"
+          rows="7"
+          id="comment"
+        ></textarea>
+        <span class="join-form__name join-form__name--textarea">Enter comment</span>
+      </label>
+      <label class="join-form__accept">
+        <input
+          class="join-form__checkboxhidden"
+          type="checkbox"
+          name="accept"
+          value="accept-offer"
+        />
+        <span class="join-form__checkbox">
+          <svg width="16" height="15">
+            <use href="./images/icons.svg#checkbox"></use>
+          </svg>
+        </span>
+        <span class="join-form__checkboxchecked">
+          <svg width="16" height="15">
+            <use href="./images/icons.svg#accept"></use>
+          </svg>
+        </span>
+        <span class="join-form__offer"
+          >Соглашаюсь с рассылкой и принимаю
+          <a class="join-form__offerlink" href="">Условия договора</a></span
+        >
+      </label>
+      <button class="join-form__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
