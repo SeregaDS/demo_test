@@ -4,11 +4,11 @@
   background-color: $bgc-hero-color-FFB8CA;
   padding-top: 8px;
 
-  @include mq (tablet) {
+  @include mq(tablet) {
     padding-top: 32px;
   }
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     padding-top: 36px;
   }
 }
@@ -17,19 +17,19 @@
   display: flex;
   align-items: center;
 
-  @include mq (mobile-only) {
+  @include mq(mobile-only) {
     justify-content: space-between;
   }
 }
 
 .header-logo__link {
-  @include mq (desktop) {
+  @include mq(desktop) {
     margin-right: 135px;
   }
 }
 
 .header-btn {
-  @include mq (tablet) {
+  @include mq(tablet) {
     display: flex;
     margin-left: auto;
   }
@@ -37,12 +37,15 @@
 
 .btn__menu {
   background-color: $bgc-hero-color-FFB8CA;
+  height: 20px;
+  position: relative;
+  z-index: 200;
 
-  @include mq (tablet-only) {
+  @include mq(tablet-only) {
     margin-right: 16px;
   }
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     display: none;
   }
 }
@@ -50,8 +53,7 @@
 .btn-buy {
   display: none;
 
-  @include mq (tablet) {
-
+  @include mq(tablet) {
     @include center;
     color: $accent-red-color-D41443;
     background-color: $bgc-white-color-FFFFFF;
@@ -66,14 +68,13 @@
     position: relative;
     z-index: 200;
 
-    @include mq (tablet-only) {
+    @include mq(tablet-only) {
       margin-left: 16px;
     }
 
-
     &:hover,
     &:focus {
-      background-color: #ECEBEB;
+      background-color: #ecebeb;
     }
   }
 }
@@ -85,16 +86,14 @@
   stroke: $accent-red-color-D41443;
 }
 
-
-
 .nav {
   position: relative;
   z-index: 200;
-  @include mq (notDesktop) {
+  @include mq(notDesktop) {
     display: none;
   }
 
-  @include font-menu (700, 16px, 1.31)
+  @include font-menu(700, 16px, 1.31);
 }
 
 .nav__list {
