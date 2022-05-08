@@ -8,23 +8,7 @@
   z-index: 99;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    111.5deg,
-    rgba(249, 230, 1, 0.22) 9.9%,
-    rgba(249, 144, 1, 0.22) 19.4%,
-    rgba(255, 22, 22, 0.22) 29.2%,
-    rgba(255, 22, 133, 0.22) 37.7%,
-    rgba(255, 22, 197, 0.22) 47.7%,
-    rgba(232, 22, 255, 0.22) 53.9%,
-    rgba(162, 22, 255, 0.22) 60%,
-    rgba(80, 22, 255, 0.22) 68.8%,
-    rgba(22, 104, 255, 0.22) 74.2%,
-    rgba(22, 168, 255, 0.22) 77.6%,
-    rgba(22, 255, 220, 0.22) 86.7%,
-    rgba(22, 255, 179, 0.22) 92.5%,
-    rgba(22, 255, 109, 0.22) 97.1%,
-    rgba(92, 255, 22, 0.22) 103.5%
-  );
+  background-image: linear-gradient(to right, rgb(255, 245, 246, 0.2), rgb(255, 184, 0, 0.2));
 
   opacity: 1;
   transition: opacity 250ms $typical-cubic;
