@@ -1,186 +1,274 @@
-// .testimonials {
-//   width: 100%;
-// }
-
-// .testimonials__image {
-//   margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 32px;
-//     display: block;
-// }
-
-// .testimonials__review {
-//   position: relative;
-//   background-color: $bgc-testimonials-FAFAFA;
-//   padding: 43px 50px 17px 50px;
-//   max-width: calc(100% - 140px);
-
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 36px;
-
-//   text-align: center;
-//   z-index: -2;
-
-//   &::after {
-//       content: '';
-//       background-image: url("data:image/svg+xml,%3Csvg width='32' height='4' viewBox='0 0 32 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='30' cy='2' r='2' fill='%23C7133E'/%3E%3C/svg%3E ");
-//       height: 4px;
-//       background-position: center;
-//       background-repeat: no-repeat;
-//       width: 100%;
-//       height: 4px;
-//       position: absolute;
-//       bottom: -16px;
-//           left: 0;
-//       }
-// }
-
-// .testimonials__text {
-
-//   position: relative;
-
-//   font-family: 'DM Sans';
-//   font-weight: 500;
-//   font-size: 12px;
-//   line-height: 2.55;
-//   padding-left: 15px;
-//   padding-right: 8px;
-
-//   &::before {
-//       content: '';
-//       position: absolute;
-//       height: 100%;
-//       width: 100%;
-//       top: 0;
-//       left: 0;
-  
-//       background: repeating-linear-gradient(to bottom, transparent, transparent 29.6px, $footer-line-color-E1E1E1 29.6px, $footer-line-color-E1E1E1 30.6px);
-//     }
- 
-// }
-
-// .testimonials__icon {
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   transform: translateX(-50%);
-//   transform: translateY(-50%);
-//   z-index: -1;
-// }
-
-// .testimonials__name {
-//   font-family: 'DM Sans';
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.86;
-//     text-align: center;
-//     margin-bottom: 16px;
-// }
-
 .testimonials {
   padding-top: 40px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+      padding-bottom: 40px;
+    }
+
+  @media screen and (min-width: 1280px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
+
 
 .testimonials__title {
   @extend %visually-hidden;
 }
 
-.testimonials__item {
+.slider__item {
   display: grid;
   justify-items: center;
   width: 100%;
 }
 
-.testimonials__wrap {
+.slider__wrap {
   position: relative;
   z-index: 2;
-  margin-top: 16px;
-  padding-left: 65px;
-  padding-right: 58px;
+  margin-top: 32px;
+  padding-left: 60px;
+  padding-right: 50px;
   padding-top: 43px;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
   background-color: $bgc-testimonials-FAFAFA;
-}
 
-.testimonials__text {
+  &::after {
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='4' viewBox='0 0 32 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='30' cy='2' r='2' fill='%23C7133E'/%3E%3C/svg%3E ");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      top: calc(100% + 16px);
+      left: 0;
+    }
+
+         @media screen and (min-width: 768px) {
+           
+             padding-left: 6px;
+             padding-right: 6px;
+             padding-bottom: 36px;
+             padding-top: 37px;
+            background-color: #fafafa66;
+            margin-top: 20px;
+
+            &::after {
+              top: calc(100% + 4px);
+            }
+    
+           }
+           
+           @media screen and (min-width: 1280px) {
+          
+                       padding-left: 106px;
+                       padding-right: 107px;
+                       padding-bottom: 31px;
+                       padding-top: 47px;
+                       background-color: $bgc-testimonials-FAFAFA;
+                       margin-top: 16px;
+          
+                       &::after {
+                         top: calc(100% + 16px);
+                       }
+          
+                     }
+         }
+
+.slider__text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
+  padding-left: 15px;
+  padding-right: 8px;
+  background: repeating-linear-gradient(to bottom, #00000000, #00000000 29.6px, #e1e1e1 29.6px, #e1e1e1 30.6px);
+  box-sizing: border-box;
 
-  color: $text-black-color-000000;
-  background: repeating-linear-gradient(to bottom,
-      transparent 0px,
-      transparent 29px,
-      #e1e1e1 30px,
-      #e1e1e1 30px);
-
-  &::after {
-    content: '';
-    background-image: url("data:image/svg+xml,%3Csvg width='32' height='4' viewBox='0 0 32 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='30' cy='2' r='2' fill='%23C7133E'/%3E%3C/svg%3E ");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    bottom: -16px;
-    left: 0;
+  
+    @media screen and (min-width: 768px) {
+     
+        font-size: 14px;
+        line-height: 2.16;
+        padding-left: 44px;
+        padding-right: 49px;
+        background: repeating-linear-gradient(to bottom, #00000000, #00000000 29.24px, #e1e1e1 29.24px, #e1e1e1 30.24px);
   }
-}
 
-.testimonials__icon {
+    @media screen and (min-width: 1280px) {
+  
+      font-size: 16px;
+      line-height: 1.86;
+      padding-left: 36px;
+      padding-right: 37px;
+      background: repeating-linear-gradient(to bottom, #00000000, #00000000 28.76px, #e1e1e1 28.76px, #e1e1e1 29.76px);
+    }
+}
+.slider__icon {
   position: absolute;
-  z-index: -1;
-  top: 30px;
-  left: 53px;
-  width: 54px;
-  height: 40px;
+      left: 0;
+      top: 0;
+      transform: translateX(-50%);
+      transform: translateY(-50%);
+      z-index: -1;
   fill: #e1e1e1;
 }
 
-.testimonials__owner {
+.slider__owner {
   margin-top: 36px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
   color: $text-black-color-000000;
+
+  @media screen and (min-width: 768px) {
+    
+        font-size: 16px;
+        margin-top: 24px;
+      
+    }
+
+        @media screen and (min-width: 1280px) {
+    
+          font-size: 16px;
+          margin-top: 36px;
+    
+        }
 }
 
-@media screen and (min-width: 768px) {
-  .testimonials__text {
-    font-size: 14px;
-    line-height: 2.16;
-  }
 
-  .testimonials__owner {
-    font-size: 16px;
-  }
-}
 
-@media screen and (min-width: 1280px) {
-  .testimonials {
-    padding-top: 95px;
-    padding-bottom: 60px;
-  }
-}
-
- .itcss__items {
+ .slider__items {
    counter-reset: slide;
  }
 
- .itcss__item {
+ .slider__item {
    counter-increment: slide;
  }
 
- .itcss__item>div::before {
-   content: counter(slide);
-   position: absolute;
-   top: 10px;
-   right: 20px;
-   color: #fff;
-   font-style: italic;
-   font-size: 32px;
-   font-weight: bold;
+ .slider {
+   position: relative;
+   overflow: hidden;
+   max-width: 100%;
+   margin-left: auto;
+   margin-right: auto;
  }
+
+ /* стили для wrapper */
+ .slider__wrapper {
+   position: relative;
+   overflow: hidden;
+   //   background-color: #eee;
+ }
+
+ /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+ .slider__items {
+   display: flex;
+   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ /* класс для отключения transition */
+ .transition-none {
+   transition: none;
+ }
+
+ /* стили для элементов */
+ .slider__item {
+   flex: 0 0 100%;
+   max-width: 100%;
+   position: relative;
+   display: grid;
+   justify-items: center;
+ }
+
+ /* кнопки Prev и Next */
+ .slider__control {
+   position: absolute;
+   top: 50%;
+   width: 40px;
+   height: 50px;
+   transform: translateY(-25%);
+   display: none;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   background: rgba(0, 0, 0, 0.3);
+   opacity: 0.1;
+   user-select: none;
+
+  &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+ }
+
+ .slider__control_show {
+   display: flex;
+ }
+
+ 
+
+ .slider__control_prev {
+   left: 0;
+ }
+
+ .slider__control_next {
+   right: 0;
+ }
+
+ .slider__control::before {
+   content: '';
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+ }
+
+ .slider__control_prev::before {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+ }
+
+ .slider__control_next::before {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+ }
+
+ /* Индикаторы */
+ .slider__indicators {
+    //  position: absolute;
+   display: flex;
+   justify-content: center;
+   padding-left: 0;
+   margin-top: 16px;
+   list-style: none;
+   user-select: none;
+
+  @media screen and (min-width: 768px) {
+        margin-top: 32px;
+ }
+  }
+
+ .slider__indicator {
+   flex: 0 1 auto;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   margin-right: 9px;
+   margin-left: 9px;
+   background-color: #d9d9d9;
+   background-clip: padding-box;
+   cursor: pointer;
+ }
+
+ .slider__indicator_active {
+   background-color: transparent;
+   background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2399 5.77539C12.4646 5.53163 12.4429 5.15801 12.1914 4.94111L6.65187 0.159738C6.40043 -0.0571627 5.99731 -0.052619 5.75117 0.169981L0.19278 5.19603C-0.053367 5.41863 -0.065448 5.79177 0.166032 6.02912L0.305389 6.17228C0.536586 6.40963 0.910291 6.43793 1.13955 6.2353L1.55495 5.86834V11.2407C1.55495 11.5703 1.82571 11.8372 2.15961 11.8372H4.32629C4.66019 11.8372 4.93095 11.5703 4.93095 11.2407V7.48221H7.69456V11.2407C7.68976 11.5701 7.92867 11.8369 8.26258 11.8369H10.5587C10.8926 11.8369 11.1634 11.5701 11.1634 11.2405V5.94398C11.1634 5.94398 11.2781 6.04315 11.4197 6.16587C11.561 6.28835 11.8577 6.19014 12.0824 5.94614L12.2399 5.77539Z' fill='%23D31342'/%3E%3C/svg%3E%0A");
+   border-radius: 0;
+ }
+
+ 
