@@ -17,21 +17,27 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: -33vw;
     @media screen and (min-width: 480px) {
       padding-left: 3px;
       padding-right: 3px;
+      margin-bottom: -138px;
     }
     @media screen and (min-width: 768px) {
       padding-left: 25px;
       padding-right: 25px;
+      margin-bottom: -118px;
     }
     @media screen and (min-width: 1280px) {
       padding-left: 120px;
       padding-right: 120px;
+      margin-bottom: 7px;
     }
     &-mobile {
       @media screen and (min-width: 768px),
         (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         display: none;
@@ -39,9 +45,11 @@
     }
     &-mobile-retina {
       @media screen and (min-width: 768px),
-        (max-device-pixel-ratio: 1.99),
-        (max-resolution: 191dpi),
-        (max-resolution: 1.99dppx) {
+        (max-device-pixel-ratio: 1),
+        (-webkit-max-device-pixel-ratio: 1),
+        (-o-max-device-pixel-ratio: 1/1),
+        (max-resolution: 96dpi),
+        (max-resolution: 1dppx) {
         display: none;
       }
     }
@@ -49,6 +57,8 @@
       @media screen and (min-width: 1280px),
         (max-width: 767px),
         (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         display: none;
@@ -57,9 +67,11 @@
     &-tablet-retina {
       @media screen and (min-width: 1280px),
         (max-width: 767px),
-        (max-device-pixel-ratio: 1.99),
-        (max-resolution: 191dpi),
-        (max-resolution: 1.99dppx) {
+        (max-device-pixel-ratio: 1),
+        (-webkit-max-device-pixel-ratio: 1),
+        (-o-max-device-pixel-ratio: 1/1),
+        (max-resolution: 96dpi),
+        (max-resolution: 1dppx) {
         display: none;
       }
     }
