@@ -1,6 +1,9 @@
 .contacts {
   width: 100%;
-  background: linear-gradient(#ffffff, #fff5f6);
+
+  &__container {
+    background: linear-gradient(#ffffff, #fff5f6);
+  }
 
   &__title {
     @extend %visually-hidden;
