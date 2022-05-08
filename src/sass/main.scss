@@ -5,6 +5,7 @@
 
 // Стили для файла с примером HTML-фрагмента
 
+@import './components/preloader';
 @import './utils/variables';
 @import './base/normalize';
 @import './utils/mixins';
@@ -21,3 +22,4 @@
 @import './components/footer';
 @import './components/modal-buy';
 @import './components/menu';
+

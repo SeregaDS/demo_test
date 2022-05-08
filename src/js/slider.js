@@ -16,15 +16,15 @@ class ItcSimpleSlider {
   // базовые классы и селекторы
   static PREFIX = 'slider';
   static CLASS_NAME_ITEM = `${ItcSimpleSlider.PREFIX}__item`;
-  static CLASS_NAME_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}__item_active`;
+  static CLASS_NAME_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}__item--active`;
   static CLASS_NAME_ITEMS = `${ItcSimpleSlider.PREFIX}__items`;
   static CLASS_NAME_INDICATOR = `${ItcSimpleSlider.PREFIX}__indicator`;
-  static CLASS_NAME_INDICATOR_ACTIVE = `${ItcSimpleSlider.PREFIX}__indicator_active`;
+  static CLASS_NAME_INDICATOR_ACTIVE = `${ItcSimpleSlider.PREFIX}__indicator--active`;
   static CLASS_NAME_INDICATORS = `${ItcSimpleSlider.PREFIX}__indicators`;
   static CLASS_NAME_CONTROL = `${ItcSimpleSlider.PREFIX}__control`;
-  static CLASS_NAME_CONTROL_PREV = `${ItcSimpleSlider.PREFIX}__control_prev`;
-  static CLASS_NAME_CONTROL_NEXT = `${ItcSimpleSlider.PREFIX}__control_next`;
-  static CLASS_NAME_CONTROL_SHOW = `${ItcSimpleSlider.PREFIX}__control_show`;
+  static CLASS_NAME_CONTROL_PREV = `${ItcSimpleSlider.PREFIX}__control--prev`;
+  static CLASS_NAME_CONTROL_NEXT = `${ItcSimpleSlider.PREFIX}__control--next`;
+  static CLASS_NAME_CONTROL_SHOW = `${ItcSimpleSlider.PREFIX}__control--show`;
   static SELECTOR_ITEMS = `.${ItcSimpleSlider.CLASS_NAME_ITEMS}`;
   static SELECTOR_ITEM = `.${ItcSimpleSlider.CLASS_NAME_ITEM}`;
   static SELECTOR_ITEM_ACTIVE = `.${ItcSimpleSlider.CLASS_NAME_ITEM_ACTIVE}`;

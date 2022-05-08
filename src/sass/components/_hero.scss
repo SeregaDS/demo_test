@@ -62,6 +62,7 @@
     @include fonts(400, 38px, 1.16);
   }
 }
+
 .hero__title--red {
   @include fonts(400, 58px, 0.91);
   font-family: 'Titan One';
@@ -272,5 +273,44 @@
   z-index: 3;
   @include mq(mobile-only) {
     display: none;
+  }
+}
+
+// animation
+@include mq(tablet) {
+  .animate__rubberBand {
+    animation-duration: 3s;
+  }
+
+  .animate__fadeInUpBig {
+    animation-duration: 2s;
+  }
+  .animate__rubberBand {
+    animation-duration: 2s;
+  }
+  .animate__fadeInBottomRight {
+    animation-duration: 1.5s;
+  }
+  .animate__bounceInDown {
+    animation-duration: 1.5s;
+  }
+  .animate__fadeIn {
+    animation-duration: 2s;
+    animation-delay: 3s;
+  }
+
+  .button__animation {
+    opacity: 0;
+    animation: animation 2s forwards;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes animation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
