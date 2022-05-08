@@ -55,20 +55,20 @@
 .advantages-pic {
     height: 50px;
     width: 100%;
-    background-image: image-set('../images/advantages/icon1.png' 1x, '../images/advantages/icon1-2x.png' 2x, '../images/advantages/icon1-3x.png' 3x);
+    background-image: image-set('images/advantages/icon1.png' 1x, 'images/advantages/icon1-2x.png' 2x, 'images/advantages/icon1-3x.png' 3x);
     background-repeat: no-repeat;
     background-size: 33px 50px;
     &--icon2 {
         // height: 50px;
         // width: 100%;
-        background-image: image-set('../images/advantages/icon2.png' 1x, '../images/advantages/icon2-2x.png' 2x, '../images/advantages/icon2-3x.png' 3x);
+        background-image: image-set('images/advantages/icon2.png' 1x, 'images/advantages/icon2-2x.png' 2x, 'images/advantages/icon2-3x.png' 3x);
         background-repeat: no-repeat;
         background-size: 50px 50px;
     }
     &--icon3 {
         // height: 50px;
         // width: 100%;
-        background-image: image-set('../images/advantages/icon3.png' 1x, '../images/advantages/icon3-2x.png' 2x, '../images/advantages/icon3-3x.png' 3x);
+        background-image: image-set('images/advantages/icon3.png' 1x, 'images/advantages/icon3-2x.png' 2x, 'images/advantages/icon3-3x.png' 3x);
         background-repeat: no-repeat;
         background-size: 44px 50px;
     }
