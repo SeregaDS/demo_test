@@ -36,6 +36,8 @@
     &-mobile {
       @media screen and (min-width: 768px),
         (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         display: none;
@@ -44,6 +46,8 @@
     &-mobile-retina {
       @media screen and (min-width: 768px),
         (max-device-pixel-ratio: 1),
+        (-webkit-max-device-pixel-ratio: 1),
+        (-o-max-device-pixel-ratio: 1/1),
         (max-resolution: 96dpi),
         (max-resolution: 1dppx) {
         display: none;
@@ -53,6 +57,8 @@
       @media screen and (min-width: 1280px),
         (max-width: 767px),
         (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         display: none;
@@ -62,6 +68,8 @@
       @media screen and (min-width: 1280px),
         (max-width: 767px),
         (max-device-pixel-ratio: 1),
+        (-webkit-max-device-pixel-ratio: 1),
+        (-o-max-device-pixel-ratio: 1/1),
         (max-resolution: 96dpi),
         (max-resolution: 1dppx) {
         display: none;
