@@ -202,20 +202,20 @@
       padding-bottom: 32px;
     }
   }
-}
 
-.btn {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 48px;
-  margin-bottom: 10px;
+  &__button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 48px;
+    margin-bottom: 10px;
 
-  @include mq(tablet) {
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 120px;
-    margin-bottom: 0;
+    @include mq(tablet) {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 120px;
+      margin-bottom: 0;
+    }
   }
 
   &__locations {
@@ -249,12 +249,6 @@
     }
   }
 
-  &__text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-  }
-
   &__franchise {
     display: flex;
     align-items: center;
@@ -267,8 +261,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 33px;
+    padding-right: 33px;
     max-width: 210px;
     height: 44px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -279,6 +273,12 @@
       cursor: pointer;
       background-color: $bgc-white-item-hover-ECEBEB;
     }
+  }
+
+  &__designation {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
   }
 }
 
