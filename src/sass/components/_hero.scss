@@ -1,42 +1,47 @@
 .hero {
   background-color: #ffb8ca;
+  overflow: hidden;
 }
 
 .hero__container {
-  //   height: 500px;
+  display: flex;
+  position: relative;
+  height: 502px;
 
-  max-width: 100%;
-
-  &::before {
-    content: '';
-    top: 73px;
-    left: 35px;
-    width: 346px;
-    height: 344px;
-    background-color: $accent-pink-color-FFA5BA;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
+  @include mq(tablet) {
+    height: 416px;
   }
 
   @include mq(desktop) {
+    height: 664px;
     max-width: 1600px;
   }
 }
 .hero__content {
+  padding-top: 194px;
+  z-index: 100;
+
+  @include mq(tablet) {
+    padding-top: 102px;
+  }
+}
+.hero__main-content {
+  display: flex;
 }
 .hero__title {
-  padding-top: 136px;
-  position: relative;
-  z-index: 3;
-  margin-bottom: 20px;
-
   @include fonts(400, 26px, 1.15);
   font-family: 'Titan One';
 
   text-transform: uppercase;
 
   color: $text-white-color-FFFFFF;
+
+  @include mq(tablet) {
+    @include fonts(400, 22px, 1.14);
+  }
+  @include mq(desktop) {
+    @include fonts(400, 38px, 1.16);
+  }
 }
 .hero__title--red {
   @include fonts(400, 58px, 0.91);
@@ -45,14 +50,79 @@
   text-transform: uppercase;
 
   color: #d41443;
+
+  @include mq(tablet) {
+    @include fonts(400, 34px, 0.91);
+  }
+  @include mq(desktop) {
+    @include fonts(400, 58px, 0.91);
+  }
+}
+.hero__numbers {
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+.hero__list {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  z-index: 101;
 }
 
-.hero__buttons-menu {
+.hero__item {
+  &::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 25px;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    background-color: $bgc-white-color-FFFFFF;
+    border-radius: 50%;
+
+    @include mq(desktop) {
+      top: -5px;
+      left: 40px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.hero__item-title {
+  @include fonts(400, 28px, 1.14);
+  font-family: 'Titan One';
+
+  text-transform: uppercase;
+
+  color: $accent-red-color-D41443;
+
+  @include mq(desktop) {
+    @include fonts(400, 46px, 1.15);
+  }
+}
+.hero__item-text {
+  @include fonts(400, 8px, 1.25);
+
+  color: $bgc-white-color-FFFFFF;
+
+  @include mq(desktop) {
+    @include fonts(400, 14px, 1.29);
+  }
 }
 
-.hero__button {
+.hero__item-text-cafe {
+  margin-bottom: 15px;
   position: relative;
-  z-index: 3;
+  left: 10px;
+}
+.hero__item-text-food {
+  position: relative;
+  right: 8px;
+}
+.hero__button {
+  margin-top: 20px;
   @include fonts(400, 8px, 1.25);
 
   color: $text-white-color-FFFFFF;
@@ -65,6 +135,11 @@
   &:focus {
     background-color: $bgc-red-item-hover-C7133E;
   }
+
+  @include mq(desktop) {
+    @include fonts(400, 14px, 1.3);
+    margin-top: 24px;
+  }
 }
 .hero__button--light {
   background-color: $text-white-color-FFFFFF;
@@ -75,17 +150,116 @@
     background-color: $bgc-white-item-hover-ECEBEB;
   }
 }
-.hero__image-icecream {
-  position: absolute;
-  bottom: 120px;
-  left: 120px;
-  z-index: 2;
+
+.hero__text-block {
+  position: relative;
+  width: 114px;
+  left: 152px;
+  margin-top: 61px;
+  @include mq(desktop) {
+    width: 200px;
+    margin-top: 108px;
+    left: 210px;
+  }
 }
-.hero__image-milk {
-}
-.hero__image-girl {
-}
+
 .hero__text {
+  margin-bottom: 7px;
+  @include fonts(400, 8px, 1.5);
+
+  color: $text-white-color-FFFFFF;
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(desktop) {
+    @include fonts(400, 14px, 1.4);
+    margin-bottom: 20px;
+  }
+}
+.hero__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 101;
+
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  fill: $accent-red-color-D41443;
+  transition: $typical-transition-background, $typical-transition-fill;
+
+  &:hover,
+  &:focus {
+    background-color: #f3416d;
+  }
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+  @include mq(desktop) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero__arrow:hover .hero__arrow--icon,
+.hero__arrow:focus .hero__arrow--icon {
+  fill: rgb(53, 18, 18);
+}
+.hero__arrow--icon {
+  display: block;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+}
+
+// images
+.hero__ellipse {
+  position: absolute;
+  right: 0;
+  top: 83px;
+
+  @include mq(tablet) {
+    left: 250px;
+    top: 40px;
+  }
+  @include mq(desktop) {
+    left: 549px;
+    top: 40px;
+  }
+}
+.hero__icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+
+  @include mq(tablet) {
+    right: 300px;
+  }
+  @include mq(desktop) {
+    right: 350px;
+  }
+}
+.hero__milk {
+  position: absolute;
+  bottom: 10px;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(desktop) {
+    bottom: 80px;
+  }
+}
+.hero__girl {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   @include mq(mobile-only) {
     display: none;
   }

@@ -2,27 +2,74 @@
   <div class="container hero__container">
     <!-- content -->
     <div class="hero__content">
-      <h1 class="hero__title">
-        ice cream <br />
-        made with <br /><span class="hero__title--red"> passion</span>
-      </h1>
+      <div class="hero__main-content">
+        <div>
+          <h1 class="hero__title">
+            ice cream <br />
+            made with <br /><span class="hero__title--red"> passion</span>
+          </h1>
+        </div>
+        <div class="hero__numbers">
+          <ul class="hero__list">
+            <li class="hero__item">
+              <p class="hero__item-title">16</p>
+              <p class="hero__item-text hero__item-text-cafe">cafes</p>
+            </li>
+
+            <li class="hero__item">
+              <p class="hero__item-title">23</p>
+              <p class="hero__item-text hero__item-text-food">food trucks</p>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- buttons -->
-
-      <button type="button" class="button hero__button">Products</button>
-      <button type="button" class="button hero__button hero__button--light">How it’s made?</button>
+      <div>
+        <button type="button" class="button hero__button">Products</button>
+        <button type="button" class="button hero__button hero__button--light">
+          How it’s made?
+        </button>
+      </div>
+      <div class="hero__text-block">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="hero__arrow">
+          <svg class="hero__arrow--icon" width="26" height="26">
+            <use href="images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-    <p class="hero__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et
-    </p>
 
-    <button type="button" class="hero__arrow">
-      <svg class="hero__arrow--icon" width="26" height="26">
-        <use href="images/icons.svg#icon-arrow"></use>
-      </svg>
-    </button>
-
-    <div class="hero__ellipse"></div>
+    <picture class="hero__ellipse">
+      <source
+        srcset="
+          images/hero/desktop/hero-ellipse_desktop@1x.png 1x,
+          images/hero/desktop/hero-ellipse_desktop@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          images/hero/tablet/hero-ellipse_tablet@1x.png 1x,
+          images/hero/tablet/hero-ellipse_tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          images/hero/mobile/hero-ellipse_mobile@1x.png 1x,
+          images/hero/mobile/hero-ellipse_mobile@2x.png 2x
+        "
+        media="(max-width: 768px)"
+        type="image/png"
+      />
+      <img src="images/hero/desktop/hero-ellipse_desktop@1x.png" alt="icecream" />
+    </picture>
 
     <!-- images -->
 
@@ -95,7 +142,7 @@
     </picture>
 
     <!-- number -->
-    <picture class="hero__number hero__number--one">
+    <!-- <picture class="hero__number hero__number--one">
       <source
         srcset="
           images/hero/desktop/hero-number16_desktop@1x.png 1x,
@@ -134,6 +181,6 @@
       />
 
       <img src="images/hero/desktop/hero-number23_desktop@1x.png" alt="icecream" />
-    </picture>
+    </picture> -->
   </div>
 </section>
