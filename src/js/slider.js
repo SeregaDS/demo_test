@@ -3,10 +3,18 @@
  * Copyright 2020 - 2022 Alexander Maltsev
  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
  */
+ document.addEventListener('DOMContentLoaded', function () {
+  // инициализация слайдера
+  var slider = new ItcSimpleSlider('.slider', {
+    loop: true,
+    autoplay: true,
+    swipe: true,
+  });
+});
 
 class ItcSimpleSlider {
   // базовые классы и селекторы
-  static PREFIX = 'itcss';
+  static PREFIX = 'slider';
   static CLASS_NAME_ITEM = `${ItcSimpleSlider.PREFIX}__item`;
   static CLASS_NAME_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}__item_active`;
   static CLASS_NAME_ITEMS = `${ItcSimpleSlider.PREFIX}__items`;
