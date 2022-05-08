@@ -7,6 +7,7 @@
 
 @import './utils/variables';
 @import './base/normalize';
+@import './utils/mixins';
 @import './utils/container';
 @import './utils/placeholders';
 @import './components/header';
@@ -16,5 +17,7 @@
 @import './components/advantages';
 @import './components/gallery';
 @import './components/testimonials';
+@import './components/contacts';
 @import './components/footer';
 @import './components/modal-buy';
+@import './components/menu';

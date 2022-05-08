@@ -1,1 +1,35 @@
-<header class="header">hello world</header>
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a class="header-logo__link" href="index.html"
+        ><img src="/images/header/logo.png" alt="Company logo" width="199" height="50"
+      /></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item" id="home"><a class="nav__link" href="">Home</a></li>
+          <li class="nav__item" id="about us"><a class="nav__link" href="">About us</a></li>
+          <li class="nav__item" id="how it's made">
+            <a class="nav__link" href="">How it's made?</a>
+          </li>
+          <li class="nav__item" id="our products">
+            <a class="nav__link" href="">Our products</a>
+          </li>
+          <li class="nav__item" id="contact"><a class="nav__link" href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-btn">
+        <button class="btn__menu" type="button" data-menu-open>
+          <svg width="20" height="20">
+            <use href="/images/icons.svg#burger"></use>
+          </svg>
+        </button>
+        <button class="btn-buy" type="button" data-modal-open2>
+          Buy now
+          <svg class="btn-buy__icon">
+            <use href="images/icons.svg#btn-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
