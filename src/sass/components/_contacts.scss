@@ -3,6 +3,15 @@
 
   &__container {
     background: linear-gradient(#ffffff, #fff5f6);
+    padding-top: 24px;
+
+    @include mq(tablet) {
+      padding-top: 40px;
+    }
+
+    @include mq(desktop) {
+      padding-top: 60px;
+    }
   }
 
   &__title {
@@ -183,6 +192,12 @@
     line-height: 1.5;
     text-decoration: none;
     color: $main-text-color-907E82;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-pink-color-FFA5BA;
+    }
 
     @include mq(tablet) {
       font-size: 14px;
@@ -210,14 +225,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 48px;
+    padding-bottom: 24px;
     margin-bottom: 10px;
 
     @include mq(tablet) {
       flex-direction: row;
       justify-content: center;
-      padding-bottom: 120px;
+      padding-bottom: 20px;
       margin-bottom: 0;
+    }
+
+    @include mq(desktop) {
+      padding-bottom: 60px;
     }
   }
 
@@ -237,13 +256,32 @@
     padding-right: 17px;
     max-width: 210px;
     height: 44px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: $typical-transition-background, $typical-transition-boxshadow;
+
+    animation: pulse 3s infinite;
+    box-shadow: 0 0 0 $accent-red-color-D41443;
+
+    @keyframes pulse {
+      0% {
+        -moz-box-shadow: 0 0 0 0 rgba(127, 44, 204, 0.4);
+        box-shadow: 0 0 0 0 rgba(127, 44, 204, 0.4);
+      }
+      70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+      }
+      100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+      }
+    }
 
     &:hover,
     &:focus {
       cursor: pointer;
       background-color: $bgc-red-item-hover-C7133E;
+      animation: none;
     }
 
     @include mq(tablet) {
@@ -268,12 +306,13 @@
     padding-right: 33px;
     max-width: 210px;
     height: 44px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
+    transition: $typical-transition-background, $typical-transition-transform;
 
     &:hover,
     &:focus {
       cursor: pointer;
+      transform: scale(1.15);
       background-color: $bgc-white-item-hover-ECEBEB;
     }
   }
