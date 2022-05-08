@@ -1,3 +1,28 @@
 .footer {
   width: 100%;
+  background-color: #FFF5F6;
+}
+.footer__container{
+padding: 0 15px;
+}
+.footer__text{
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #D41443;
+}
+.footer__text--label{
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: #FFA5BA;
 }
