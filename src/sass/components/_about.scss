@@ -172,6 +172,7 @@
 
   .about__wrap {
     display: grid;
+    align-items: center;
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -228,7 +229,7 @@
   }
 
   .about__title {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-size: 58px;
     line-height: 1.13;
     letter-spacing: 0.06em;
