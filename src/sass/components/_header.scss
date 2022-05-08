@@ -1,6 +1,7 @@
 .header {
+  position: relative;
   width: 100%;
-  background-color: $accent-pink-color-FFA5BA;
+  background-color: $bgc-hero-color-FFB8CA;
   padding-top: 8px;
 
   @include mq (tablet) {
@@ -13,6 +14,7 @@
 }
 
 .header__container {
+  position: absolute;
   display: flex;
   align-items: center;
 
@@ -35,7 +37,7 @@
 }
 
 .btn__menu {
-  background-color: $accent-pink-color-FFA5BA;
+  background-color: $bgc-hero-color-FFB8CA;
 
   @include mq (tablet-only) {
     margin-right: 16px;
@@ -85,8 +87,6 @@
 
 
 .nav {
-
-
   @include mq (notDesktop) {
     display: none;
   }
