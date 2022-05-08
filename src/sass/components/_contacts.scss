@@ -226,7 +226,6 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 24px;
-    margin-bottom: 10px;
 
     @include mq(tablet) {
       flex-direction: row;
