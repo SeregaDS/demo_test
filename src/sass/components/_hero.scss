@@ -93,9 +93,8 @@
   z-index: 101;
 }
 
-.hero__item {
-}
 .hero__item-title {
+  position: relative;
   &::after {
     content: '';
     position: absolute;
@@ -240,32 +239,18 @@
   height: 10px;
 }
 
-// images
-// .hero__ellipse {
-//   position: absolute;
-//   right: 0;
-//   top: 83px;
-
-//   @include mq(tablet) {
-//     left: 250px;
-//     top: 40px;
-//   }
-//   @include mq(desktop) {
-//     left: 549px;
-//     top: 40px;
-//   }
-// }
 .hero__icecream {
   position: absolute;
   z-index: 2;
   bottom: 0;
-  right: 32px;
+  z-index: -1;
+  left: 140px;
 
   @include mq(tablet) {
-    right: 300px;
+    left: 332px;
   }
   @include mq(desktop) {
-    right: 350px;
+    left: 670px;
   }
 }
 .hero__milk {
