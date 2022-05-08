@@ -5,7 +5,7 @@
  */
  document.addEventListener('DOMContentLoaded', function () {
   // инициализация слайдера
-  var slider = new ItcSimpleSlider('.itcss', {
+  var slider = new ItcSimpleSlider('.slider', {
     loop: true,
     autoplay: true,
     swipe: true,
@@ -14,7 +14,7 @@
 
 class ItcSimpleSlider {
   // базовые классы и селекторы
-  static PREFIX = 'itcss';
+  static PREFIX = 'slider';
   static CLASS_NAME_ITEM = `${ItcSimpleSlider.PREFIX}__item`;
   static CLASS_NAME_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}__item_active`;
   static CLASS_NAME_ITEMS = `${ItcSimpleSlider.PREFIX}__items`;
