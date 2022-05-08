@@ -1,22 +1,80 @@
-.overlay {
-    background-image: linear-gradient(to right, rgb(255, 245, 246, 0.2), rgb(255, 184, 0, 0.2));
-    height: 100%;
-}
+// body.menu-open {
+//     overflow: hidden;
+// }
+// .overlay {
+//     background-image: linear-gradient(to right, rgb(255, 245, 246, 0.3), rgb(255, 184, 0, 0.3));
+//     height: 100%;
+//     width: 100%;
 
-.menu {
-    display: flex;
-        flex-direction: column;
-    background-color: $bgc-menu-E17992;
-    height: 100vh;
-    width: 100vw;
-    padding: 15px;
-        overflow-y: scroll;
+//         position: fixed;
+//         // top: 0;
+//         // left: 0;
+
+//         pointer-events: none;
+
+//         opacity: 0;
+
+//         overflow-y: scroll;
+
+//         &.is-open {
+//             opacity: 1;
+//             pointer-events: all;
+//         }
+
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         z-index: 999;
+// }
+
+// .menu {
+//         position: fixed;
+//             top: 0;
+//             right: -100%;
+//     display: flex;
+//     flex-direction: column;
+//     background-color: $bgc-menu-E17992;
+//     height: 100vh;
+//     width: 100vw;
+//     padding: 15px;
+//     padding-bottom: 40px;
+//     overflow-y: scroll;
+//     // opacity: 0;
+//         z-index: 10000;
+
+//         &.is-open {
+//                 left: 0;
+//             }
+//   // @include mq (mobile) {
+//   //         width: 40vw;
+//   //             margin-left: auto;
+//   //         }
+//     }
+
+   .menu {
+       display: flex;
+       flex-direction: column;
+    padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 48px;
     
-        @include mq (mobile) {
-                width: 40vw;
-                    margin-left: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+            background-color: $bgc-menu-E17992;
+                z-index: 100;
+                    overflow-y: scroll;
+                transition: right 500ms ease;
+                
+                    &.is-open {
+                            right: -100%;
+                            transition: right 500ms ease;
                 }
-    }
+  }
+    
     
     .menu-close {
         @include center;
@@ -86,7 +144,7 @@
     }
     
     .menu-nav__link {
-        display: block;
+        display: inline-block;
         color: $text-white-color-FFFFFF;
         padding-top: 13px;
         padding-bottom: 11px;
