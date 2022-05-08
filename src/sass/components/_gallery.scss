@@ -29,6 +29,45 @@
       padding-left: 120px;
       padding-right: 120px;
     }
+    &-mobile {
+      @media screen and (min-width: 768px),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        display: none;
+      }
+    }
+    &-mobile-retina {
+      @media screen and (min-width: 768px),
+        (max-device-pixel-ratio: 1.99),
+        (max-resolution: 191dpi),
+        (max-resolution: 1.99dppx) {
+        display: none;
+      }
+    }
+    &-tablet {
+      @media screen and (min-width: 1280px),
+        (max-width: 767px),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        display: none;
+      }
+    }
+    &-tablet-retina {
+      @media screen and (min-width: 1280px),
+        (max-width: 767px),
+        (max-device-pixel-ratio: 1.99),
+        (max-resolution: 191dpi),
+        (max-resolution: 1.99dppx) {
+        display: none;
+      }
+    }
+    &-desktop {
+      @media screen and (max-width: 1279px) {
+        display: none;
+      }
+    }
   }
   &__title {
     @extend %visually-hidden;
