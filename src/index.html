@@ -12,6 +12,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css"
       integrity="sha512-Ne9/ZPNVK3w3pBBX6xE86bNG295dJl4CHttrCp3WmxO+8NQ2Vn8FltNr6UsysA1vm7NE6hfCszbXe3D6FUNFsA=="
       crossorigin="anonymous"
@@ -21,6 +25,7 @@
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/preloader.html"></include>
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
@@ -31,9 +36,18 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal.html"></include>
+    <include src="./partials/menu.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <script>
+      window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+      };
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"
       integrity="sha512-XGiM73niqHXRwBELBEktUKuGXC9yHyaxEsVWvUiCph8yxkaNkGeXJnqs5Ls1RSp4Q+PITMcCy2Dw7HxkzBWQCw=="
@@ -41,5 +55,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/gallery.js" type="module"></script>
+    <script src="js/menu.js" type="module"></script>
+    <script src="js/modal.js" type="module"></script>
+    <script src="js/slider.js" type="module"></script>
+    <script src="js/modal-locacions.js" type="module"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
