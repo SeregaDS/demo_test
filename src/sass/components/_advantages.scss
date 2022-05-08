@@ -1,5 +1,77 @@
 .advantages {
     width: 100%;
+    background-color: #FFF5F6;
+}
+
+.advantages-container {
+    width: 230px;
+    margin-left: 20px;
+    @media screen and(min-width: 768px) {
+        width: 527px;
+    }
+    @media screen and(min-width:1200px) {
+        width: 1280px;
+    }
+}
+
+.advantages__title {
+    @extend %visually-hidden;
+}
+
+.advantages__list {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    @media screen and(min-width: 768px) {
+        display: flex;
+    }
+    @media screen and(min-width:1200px) {
+        padding-right: 123px;
+    }
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    @media screen and(min-width:768px) {
+        // margin-bottom: 0;
+        &:not(:first-child) {
+            margin-left: 22px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and(min-width:1200px) {
+        &:not(:first-child) {
+            margin-left: 106px;
+        }
+    }
+}
+
+.advantages-pic {
+    height: 50px;
+    width: 100%;
+    background-image: image-set('../images/advantages/icon1.png' 1x, '../images/advantages/icon1-2x.png' 2x, '../images/advantages/icon1-3x.png' 3x);
+    background-repeat: no-repeat;
+    background-size: 33px 50px;
+    &--icon2 {
+        // height: 50px;
+        // width: 100%;
+        background-image: image-set('../images/advantages/icon2.png' 1x, '../images/advantages/icon2-2x.png' 2x, '../images/advantages/icon2-3x.png' 3x);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+    }
+    &--icon3 {
+        // height: 50px;
+        // width: 100%;
+        background-image: image-set('../images/advantages/icon3.png' 1x, '../images/advantages/icon3-2x.png' 2x, '../images/advantages/icon3-3x.png' 3x);
+        background-repeat: no-repeat;
+        background-size: 44px 50px;
+    }
 }
 
 .advantages__numbers {
@@ -10,6 +82,7 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    text-align: left;
     color: #D41443;
 }
 
@@ -19,5 +92,6 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
+    text-align: left;
     color: #000000;
 }
