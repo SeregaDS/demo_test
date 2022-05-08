@@ -79,7 +79,7 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 8px;
-  background: repeating-linear-gradient(to bottom, #00000000, #00000000 29.6px, #e1e1e1 29.6px, #e1e1e1 30.6px);
+  background: repeating-linear-gradient(to bottom, #00000000, #00000000 29px, #e1e1e1 29px, #e1e1e1 30px);
   box-sizing: border-box;
 
   
@@ -89,7 +89,7 @@
         line-height: 2.16;
         padding-left: 44px;
         padding-right: 49px;
-        background: repeating-linear-gradient(to bottom, #00000000, #00000000 29.24px, #e1e1e1 29.24px, #e1e1e1 30.24px);
+        background: repeating-linear-gradient(to bottom, #00000000, #00000000 29px, #e1e1e1 29px, #e1e1e1 30px);
   }
 
     @media screen and (min-width: 1280px) {
@@ -98,7 +98,7 @@
       line-height: 1.86;
       padding-left: 36px;
       padding-right: 37px;
-      background: repeating-linear-gradient(to bottom, #00000000, #00000000 28.76px, #e1e1e1 28.76px, #e1e1e1 29.76px);
+      background: repeating-linear-gradient(to bottom, #00000000, #00000000 28px, #e1e1e1 28px, #e1e1e1 29px);
     }
 }
 .slider__icon {
@@ -139,7 +139,7 @@
  .slider__items {
    counter-reset: slide;
    display: flex;
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: transform 650ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .slider__item {
@@ -280,7 +280,7 @@
   background-color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2399 5.77539C12.4646 5.53163 12.4429 5.15801 12.1914 4.94111L6.65187 0.159738C6.40043 -0.0571627 5.99731 -0.052619 5.75117 0.169981L0.19278 5.19603C-0.053367 5.41863 -0.065448 5.79177 0.166032 6.02912L0.305389 6.17228C0.536586 6.40963 0.910291 6.43793 1.13955 6.2353L1.55495 5.86834V11.2407C1.55495 11.5703 1.82571 11.8372 2.15961 11.8372H4.32629C4.66019 11.8372 4.93095 11.5703 4.93095 11.2407V7.48221H7.69456V11.2407C7.68976 11.5701 7.92867 11.8369 8.26258 11.8369H10.5587C10.8926 11.8369 11.1634 11.5701 11.1634 11.2405V5.94398C11.1634 5.94398 11.2781 6.04315 11.4197 6.16587C11.561 6.28835 11.8577 6.19014 12.0824 5.94614L12.2399 5.77539Z' fill='%23D31342'/%3E%3C/svg%3E%0A");
     border-radius: 0;
-    animation: fadeIn 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeIn 650ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  
 
