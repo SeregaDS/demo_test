@@ -50,7 +50,7 @@
   color: $accent-pink-color-FFA5BA;
 }
 .about__title {
-  margin-bottom: 32px;
+  margin-bottom: 60px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
@@ -172,6 +172,7 @@
 
   .about__wrap {
     display: grid;
+    align-items: center;
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
   }
