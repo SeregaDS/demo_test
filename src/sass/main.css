@@ -469,16 +469,6 @@ button {
   text-transform: uppercase;
 }
 
-.products-list {
-  list-style: none;
-}
-
-.products-button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
 .products-label {
   font-family: 'Titan One';
   letter-spacing: 0.04em;
@@ -491,6 +481,30 @@ button {
   letter-spacing: 0.06em;
   color: #d41443;
   text-align: center;
+}
+
+.products-list {
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+.products-item {
+  position: relative;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-item__ice-cream {
+  background-color: #ffb8ca;
+}
+
+.products-item__ice-coffee {
+  background-color: #F0D1A5;
+}
+
+.products-item__milkshakes {
+  background-color: #C2E297;
 }
 
 .products-name {
@@ -508,6 +522,15 @@ button {
   text-transform: none;
 }
 
+.products-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
 @media screen and (max-width: 767px) {
   .products-label {
     font-size: 18px;
@@ -518,14 +541,51 @@ button {
   .products-title {
     font-size: 34px;
     line-height: 1.15;
+    margin-bottom: 148px;
+  }
+  .products-item {
+    width: 280px;
+    height: 489px;
+  }
+  .products-item:not(:last-child) {
+    margin-bottom: 140px;
+  }
+  .products-item__ice-cream::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    background-image: url(../images/products-section/home-pic1.png);
+    width: 100%;
+    height: 280px;
+  }
+  .products-item__ice-coffee::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    background-image: url(../images/products-section/home-pic2.png);
+    width: 100%;
+    height: 280px;
+  }
+  .products-item__milkshakes::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    background-image: url(../images/products-section/home-pic3.png);
+    width: 100%;
+    height: 280px;
   }
   .products-name {
     font-size: 20px;
     line-height: 1.15;
+    padding-top: 160px;
+    padding-bottom: 70px;
   }
   .products-description {
     font-size: 14px;
     line-height: 1.52;
+    padding-right: 39px;
+    padding-left: 41px;
+    margin-bottom: 32px;
   }
 }
 
