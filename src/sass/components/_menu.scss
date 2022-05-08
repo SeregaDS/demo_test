@@ -1,22 +1,59 @@
+body.menu-open {
+    overflow: hidden;
+}
 .overlay {
-    background-image: linear-gradient(to right, rgb(255, 245, 246, 0.2), rgb(255, 184, 0, 0.2));
+    background-image: linear-gradient(to right, rgb(255, 245, 246, 0.3), rgb(255, 184, 0, 0.3));
     height: 100%;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+
+    pointer-events: none;
+    overflow-y: scroll;
+    transition: left 250ms $typical-cubic;
+    &.is-open {
+        left: 0;
+        pointer-events: all;
+    }
 }
 
-.menu {
-    display: flex;
-        flex-direction: column;
-    background-color: $bgc-menu-E17992;
-    height: 100vh;
-    width: 100vw;
-    padding: 15px;
-        overflow-y: scroll;
+   .menu {
+   display: flex;
+    flex-direction: column;
     
-        @include mq (mobile) {
-                width: 40vw;
-                    margin-left: auto;
-                }
-    }
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $bgc-menu-E17992;
+    z-index: 100;
+    overflow-y: scroll;
+    transition: right 500ms ease;
+
+    @include mq (mobile) {
+         width: 45vw;
+         margin-left: auto;
+         }
+        
+    .overlay.is-open & {
+        right: 0;
+        transition: right 250ms $typical-cubic;
+        }
+  }
+
+  .menu-container {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+  }
     
     .menu-close {
         @include center;
@@ -35,7 +72,7 @@
         .menu-close:hover &,
         .menu-close:focus & {
             stroke: $accent-red-color-D41443;
-            transform: rotate(90deg);
+            transform: rotate(90deg) scale(1.2);
         }
 }
         .menu-button {
@@ -86,7 +123,7 @@
     }
     
     .menu-nav__link {
-        display: block;
+        display: inline-block;
         color: $text-white-color-FFFFFF;
         padding-top: 13px;
         padding-bottom: 11px;
