@@ -14,11 +14,11 @@ body.menu-open {
 
     pointer-events: none;
     overflow-y: scroll;
-    transition: transform 250ms $typical-cubic;
+    transition: transform 500ms $typical-cubic;
 
     &.is-open {
         transform: translate(0);
-        transition: transform 250ms $typical-cubic;
+        transition: transform 500ms $typical-cubic;
         pointer-events: all;
     }
 }
