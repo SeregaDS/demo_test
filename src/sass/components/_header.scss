@@ -22,6 +22,10 @@
   }
 }
 
+.animate__bounceInDown {
+  animation-duration: 1.5s;
+}
+
 .header-logo__link {
   @include mq(desktop) {
     margin-right: 135px;
