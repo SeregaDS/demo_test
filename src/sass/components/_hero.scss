@@ -24,8 +24,8 @@
     @include mq(desktop) {
       width: 534px;
       height: 534px;
-      left: 549px;
-      top: 40px;
+      left: 510px;
+      top: 52px;
     }
   }
 
@@ -44,6 +44,9 @@
 
   @include mq(tablet) {
     padding-top: 102px;
+  }
+  @include mq(desktop) {
+    padding-top: 147px;
   }
 }
 
@@ -80,11 +83,17 @@
 }
 .hero__numbers {
   position: absolute;
-  top: 90px;
+
   right: 20px;
   z-index: 101;
   @include mq(mobile-only) {
     display: none;
+  }
+  @include mq(tablet) {
+    top: 100px;
+  }
+  @include mq(desktop) {
+    top: 150px;
   }
 }
 .hero__list {
@@ -251,7 +260,7 @@
     left: 332px;
   }
   @include mq(desktop) {
-    left: 670px;
+    left: 640px;
   }
 }
 .hero__milk {
