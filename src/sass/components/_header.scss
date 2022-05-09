@@ -44,7 +44,7 @@
   background-color: $bgc-hero-color-FFB8CA;
   height: 20px;
   position: relative;
-  z-index: 200;
+  z-index: 3;
 
   @include mq(tablet-only) {
     margin-right: 16px;
@@ -71,7 +71,7 @@
     padding-right: 37px;
     height: 44px;
     position: relative;
-    z-index: 200;
+    z-index: 3;
 
     @include mq(tablet-only) {
       margin-left: 16px;
@@ -93,7 +93,7 @@
 
 .nav {
   position: relative;
-  z-index: 200;
+  z-index: 3;
   @include mq(notDesktop) {
     display: none;
   }
