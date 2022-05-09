@@ -1,7 +1,7 @@
 .about {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-color: $bgc-main-color-FFF5F6;
   width: 100%;
   &::after {
@@ -136,7 +136,7 @@
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     &::after {
       opacity: 0;
     }
@@ -191,7 +191,7 @@
   .about {
     position: relative;
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     background-color: $bgc-main-color-FFF5F6;
     width: 100%;
     &::after {
