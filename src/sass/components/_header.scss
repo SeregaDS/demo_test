@@ -36,6 +36,7 @@
   @include mq(tablet) {
     display: flex;
     margin-left: auto;
+    align-items: center;
   }
 }
 
