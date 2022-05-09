@@ -169,11 +169,13 @@ html {
   padding: 10px 14px;
   background-color: $accent-red-color-D41443;
   border-radius: 20px;
-  transition: $typical-transition-background;
+  transition: $typical-transition-background, $typical-transition-transform;
   letter-spacing: 0;
+  transform: scale(1);
 
   &:hover,
   &:focus {
+    transform: scale(1.15);
     background-color: $bgc-red-item-hover-C7133E;
   }
 
@@ -187,7 +189,7 @@ html {
 .hero__button--light {
   background-color: $text-white-color-FFFFFF;
   color: $accent-red-color-D41443;
-  transition: $typical-transition-background;
+  transition: $typical-transition-background, $typical-transition-transform;
   &:hover,
   &:focus {
     background-color: $bgc-white-item-hover-ECEBEB;
@@ -244,10 +246,13 @@ html {
   width: 18px;
   height: 18px;
   fill: $accent-red-color-D41443;
-  transition: $typical-transition-background, $typical-transition-fill;
+  transition: $typical-transition-background, $typical-transition-fill,
+    $typical-transition-transform;
+  transform: scale(1);
 
   &:hover,
   &:focus {
+    transform: scale(1.15);
     background-color: #f3416d;
   }
 
