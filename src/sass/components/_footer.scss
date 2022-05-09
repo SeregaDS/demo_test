@@ -123,7 +123,8 @@
 
 .footer__social--icon {
   fill: #fea5bb;
-  transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+  transform: scale(1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 250ms $typical-cubic;
 }
 .footer__social--link .footer__social--icon {
   &:hover,
@@ -132,10 +133,10 @@
     transform: scale(1.1);
   }
 }
-.footer__number--box{
+.footer__number--box {
   display: flex;
-  justify-content: center;
-  justify-content: flex-end
+  justify-content: flex-end;
+  align-items: center;
 }
 .footer__number {
   font-family: 'DM Sans';
@@ -159,15 +160,17 @@
 
 .footer__number--link {
   font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 186%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 186%;
   color: $accent-red-color-D41443;
+  transform: scale(1);
+  transition: transform 250ms $typical-cubic;
   &:hover,
   &:focus {
-      transform: scale(1.1);
-    }
+    transform: scale(1.1);
+  }
 }
 .footer__copyright {
   font-weight: 700;
