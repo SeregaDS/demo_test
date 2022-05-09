@@ -58,12 +58,31 @@
     }
 
     .products-button {
-        display: block;
+        display: flex;
         margin-right: auto;
         margin-left: auto;
-        background-color: transparent;
-        outline: none;
-        border: none;
+        border-radius: 50%;
+        background-color: $text-white-color-FFFFFF;
+        width: 40px;
+        height: 40px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .products-button:hover,
+    .products-button:focus {
+        background-color: #f3416d;
+        transform: scale(1.1);
+    }
+
+    .products-button__icon {
+        margin: auto;
+        cursor: pointer;
+        fill: #d41443;
+    }
+
+    .products-button:hover .products-button__icon,
+    .products-button:focus .products-button__icon {
+        fill: #351212;
     }
 
     @media screen and (max-width: 767px) {
