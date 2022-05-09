@@ -28,6 +28,8 @@
 
 .header-logo__link {
   @include mq(desktop) {
+    z-index: 3;
+    position: relative;
     margin-right: 135px;
   }
 }
