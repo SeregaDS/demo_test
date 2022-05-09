@@ -21,7 +21,7 @@ body.menu-open {
     overflow: hidden;
 }
 .overlay {
-    background-image: linear-gradient(to right, rgb(255, 245, 246, 0.3), rgb(255, 184, 0, 0.3));
+    background-image: linear-gradient(to right, rgb(255, 245, 246, 0.3), rgba(255, 0, 157, 0.3));
     height: 100%;
     width: 100%;
 
@@ -165,13 +165,15 @@ body.menu-open {
     margin-right: 30px;
 }
 .socials__icon {
-    fill: rgb(255, 0, 0);
+    --color2: #D41443;
+    fill: #ffffff;
     width: 34px;
     height: 34px;
     transition: $typical-transition-fill;
     
         .socials__link:hover & {
-            fill: $accent-red-color-D41443
+            fill: $accent-red-color-D41443;
+            --color2: #ffffff
         }
     }
     
@@ -191,4 +193,5 @@ body.menu-open {
     .tel-number__link {
         color: $accent-red-color-D41443;
         padding-left: 5px;
+        transition: scale 250ms $typical-cubic;
 }
