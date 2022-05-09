@@ -249,32 +249,14 @@
     padding-right: 17px;
     max-width: 210px;
     height: 44px;
-
+    transform: scale(1);
     transition: $typical-transition-background, $typical-transition-boxshadow;
-
-    animation: pulse 3s infinite;
-    box-shadow: 0 0 0 $accent-red-color-D41443;
-
-    @keyframes pulse {
-      0% {
-        -moz-box-shadow: 0 0 0 0 rgba(127, 44, 204, 0.4);
-        box-shadow: 0 0 0 0 rgba(127, 44, 204, 0.4);
-      }
-      70% {
-        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
-        box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
-      }
-      100% {
-        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
-        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
-      }
-    }
 
     &:hover,
     &:focus {
       cursor: pointer;
       background-color: $bgc-red-item-hover-C7133E;
-      animation: none;
+      transform: scale(1.1);
     }
 
     @include mq(tablet) {
@@ -305,7 +287,7 @@
     &:hover,
     &:focus {
       cursor: pointer;
-      transform: scale(1.15);
+      transform: scale(1.1);
       background-color: $bgc-white-item-hover-ECEBEB;
     }
   }
