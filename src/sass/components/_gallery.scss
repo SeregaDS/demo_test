@@ -291,3 +291,39 @@
     }
   }
 }
+
+.sl-wrapper {
+  background-color: $bgc-pink-backdrop;
+  .sl-counter {
+    color: $bgc-red-item-hover-C7133E;
+  }
+  .sl-close {
+    color: $bgc-red-item-hover-C7133E;
+    transform: $typical-transition-opacity;
+    opacity: 0.5 !important;
+    &:hover,
+    &:focus {
+      opacity: 1 !important;
+    }
+  }
+  .sl-navigation {
+    .sl-prev {
+      color: $bgc-red-item-hover-C7133E;
+      transform: $typical-transition-opacity;
+      opacity: 0.5;
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+    .sl-next {
+      color: $bgc-red-item-hover-C7133E;
+      transform: $typical-transition-opacity;
+      opacity: 0.5;
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}
