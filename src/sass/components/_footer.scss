@@ -126,8 +126,10 @@
   transition: fill .25s cubic-bezier(.4, 0, .2, 1);
 }
 .footer__social--link .footer__social--icon {
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $accent-red-color-D41443;
+    transform: scale(1.1);
   }
 }
 .footer__number--box{
@@ -162,9 +164,10 @@
     font-size: 16px;
     line-height: 186%;
   color: $accent-red-color-D41443;
-}
-.footer__number--link:hover {
-  transform: scale(1.1);
+  &:hover,
+  &:focus {
+      transform: scale(1.1);
+    }
 }
 .footer__copyright {
   font-weight: 700;
