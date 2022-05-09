@@ -123,11 +123,19 @@
 
 .footer__social--icon {
   fill: #fea5bb;
+  transition: fill .25s cubic-bezier(.4, 0, .2, 1);
 }
 .footer__social--link .footer__social--icon {
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $accent-red-color-D41443;
+    transform: scale(1.1);
   }
+}
+.footer__number--box{
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end
 }
 .footer__number {
   font-family: 'DM Sans';
@@ -136,6 +144,7 @@
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
+  margin-right: 10px;
 
   color: $text-black-color-000000;
 
@@ -149,9 +158,17 @@
 }
 
 .footer__number--link {
+  font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
   color: $accent-red-color-D41443;
+  &:hover,
+  &:focus {
+      transform: scale(1.1);
+    }
 }
-
 .footer__copyright {
   font-weight: 700;
   font-size: 14px;
