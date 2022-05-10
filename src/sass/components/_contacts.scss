@@ -606,7 +606,7 @@
   border-radius: 24px;
   overflow: hidden;
   display: block;
-
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover .image__chicago::before {
@@ -620,7 +620,7 @@
   border-radius: 24px;
   overflow: hidden;
   display: block;
-
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover .image__los-angeles::before {
@@ -634,7 +634,7 @@
   border-radius: 24px;
   overflow: hidden;
   display: block;
-
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover .image__new-york::before {
