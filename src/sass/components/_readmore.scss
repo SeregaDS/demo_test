@@ -1,0 +1,28 @@
+.readmore {
+  &.modal {
+    padding-bottom: 50px;
+  }
+  &__accent {
+    text-transform: uppercase;
+    color: $accent-red-color-D41443;
+  }
+  &__text {
+    font-family: 'Titan One';
+    color: $main-text-color-907E82;
+    line-height: 2;
+  }
+  &__description {
+  }
+  &__name {
+    @media screen and (max-width: 479px) {
+      transform: translateY(35px) translateX(80px) scale(1.5);
+    }
+  }
+  &__input {
+    margin-bottom: 30px;
+  }
+}
+
+.showme-btn {
+  margin-bottom: 30px;
+}
