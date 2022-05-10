@@ -44,10 +44,10 @@ body.menu-open {
   }
 
   .menu-container {
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+    //   padding-left: 15px;
+    //   padding-right: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -121,6 +121,7 @@ body.menu-open {
     }
     
     .menu-nav__link {
+        padding-left: 20px;
         display: inline-block;
         color: $text-white-color-FFFFFF;
         padding-top: 13px;
@@ -135,11 +136,10 @@ body.menu-open {
 .list-block {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    margin-top: auto;
 }
 .socials__list {
         @include center;
-            margin-top: auto;
 }
 
 .socials__item:not(:last-child) {
