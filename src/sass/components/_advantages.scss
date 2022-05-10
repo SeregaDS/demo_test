@@ -99,6 +99,7 @@
 }
 
 .advantages__text {
+<<<<<<< Updated upstream
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -107,3 +108,27 @@
     text-align: left;
     color: #000000;
 }
+=======
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: left;
+  color: #000000;
+}
+
+.animate__bounce {
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+.animate__shakeY {
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+
+.animate__heartBeat {
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+>>>>>>> Stashed changes
