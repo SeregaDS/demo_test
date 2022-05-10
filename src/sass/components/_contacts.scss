@@ -22,17 +22,17 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
-    display: block;
+    // display: block;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover .image__chicago::before,
-    &:hover .image__los-angeles::before,
-    &:hover .image__new-york::before {
-      opacity: 0.5;
-      transform: translateY(0);
-      padding: 0;
-    }
+    // &:hover .image__chicago::before,
+    // &:hover .image__los-angeles::before,
+    // &:hover .image__new-york::before {
+    //   opacity: 0.5;
+    //   transform: translateY(0);
+    //   padding: 0;
+    // }
 
     @include mq(tablet) {
       display: grid;
@@ -62,6 +62,20 @@
 
     @include mq(desktop) {
       padding: 40px;
+    }
+  }
+
+  .border__chicago {
+    border-radius: 24px;
+    overflow: hidden;
+    display: block;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .image__chicago::before {
+      opacity: 0.5;
+      transform: translateY(0);
+      padding: 0;
     }
   }
 
@@ -501,6 +515,11 @@
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  transition: text-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2em #ff0101, 1px 1px 0.2em #6946d6;
+  }
 
   &::before {
     display: inline-block;
@@ -516,8 +535,9 @@
     background-position: top right;
     transform: translateY(100%);
     opacity: 0;
-    transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -525,6 +545,11 @@
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  transition: text-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2em #ff0101, 1px 1px 0.2em #6946d6;
+  }
 
   &::before {
     display: inline-block;
@@ -540,8 +565,8 @@
     background-position: top right;
     transform: translateY(100%);
     opacity: 0;
-    transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -549,6 +574,11 @@
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  transition: text-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2em #ff0101, 1px 1px 0.2em #6946d6;
+  }
 
   &::before {
     display: inline-block;
@@ -563,7 +593,53 @@
     background-size: cover;
     transform: translateY(100%);
     opacity: 0;
-    transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contacts__position {
+  position: sticky;
+}
+
+.border__chicago {
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .image__chicago::before {
+    opacity: 0.5;
+    transform: translateY(0);
+    padding: 0;
+  }
+}
+
+.border__los-angeles {
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .image__los-angeles::before {
+    opacity: 0.5;
+    transform: translateY(0);
+    padding: 0;
+  }
+}
+
+.border__new-york {
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .image__new-york::before {
+    opacity: 0.5;
+    transform: translateY(0);
+    padding: 0;
   }
 }
