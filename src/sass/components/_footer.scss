@@ -39,11 +39,12 @@
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  max-width: 330px;
+  max-width: 240px;
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    max-width: 330px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -61,7 +62,7 @@
 }
 
 .footer__text {
-  padding-right: 66px;
+  /* padding-right: 66px; */
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -86,7 +87,6 @@
 
 .footer__text--label {
   margin-bottom: 16px;
-  padding-right: 66px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -122,17 +122,25 @@
 }
 
 .footer__social--icon {
-  fill: #fea5bb;
+  fill: #fff;
   transform: scale(1);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 250ms $typical-cubic;
 }
-.footer__social--link .footer__social--icon {
-  &:hover,
-  &:focus {
-    fill: $accent-red-color-D41443;
-    transform: scale(1.1);
-  }
+.footer__social--link{
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FEA5BB;
+  justify-content: center;
+  align-items: center;
+    &:hover,
+    &:focus {
+        background-color: $accent-red-color-D41443;
+        transform: scale(1.1);
+      }
 }
+
 .footer__number--box {
   display: flex;
   justify-content: flex-end;
@@ -199,7 +207,6 @@
   padding-top: 16px;
   padding-bottom: 20px;
   letter-spacing: 0.02em;
-  /* or 21px */
   text-align: center;
   color: $main-text-color-907E82;
   @media screen and (min-width: 768px) {
