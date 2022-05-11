@@ -387,6 +387,12 @@
   display: none;
 }
 
+@include mq(mobile-only) {
+  .visible {
+    display: none !important;
+  }
+}
+
 .visible {
   display: block;
 }
