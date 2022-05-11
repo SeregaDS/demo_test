@@ -16,6 +16,8 @@
 .header__container {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 3;
 
   @include mq(mobile-only) {
     justify-content: space-between;
@@ -27,14 +29,14 @@
 }
 
 .header-logo__link {
-    transition: transform 250ms $typical-cubic;
+  transition: transform 250ms $typical-cubic;
 
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
 
-    @include mq(desktop) {
+  @include mq(desktop) {
     z-index: 3;
     position: relative;
     margin-right: 135px;
@@ -103,8 +105,6 @@
 }
 
 .nav {
-  position: relative;
-  z-index: 3;
   @include mq(notDesktop) {
     display: none;
   }
@@ -130,7 +130,7 @@
   color: $text-white-color-FFFFFF;
   padding-top: 13px;
   padding-bottom: 11px;
-  transition: $typical-transition-color, transform 250ms $typical-cubic;;
+  transition: $typical-transition-color, transform 250ms $typical-cubic;
 
   &:hover,
   &:focus {
