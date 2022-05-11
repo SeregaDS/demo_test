@@ -9,11 +9,12 @@ $bgc-white-color-FFFFFF: #ffffff;
 $bgc-main-color-FFF5F6: #fff5f6;
 $bgc-hero-color-FFB8CA: #ffb8ca;
 $bgc-testimonials-FAFAFA: #fafafa;
-$bgc-menu-E17992: #E17992;
+$bgc-menu-E17992: #e17992;
 
 $bgc-red-item-hover-C7133E: #c7133e;
 $bgc-white-item-hover-ECEBEB: #ecebeb;
 
+$bgc-pink-backdrop: rgba(255, 165, 186, 0.1);
 $shadow-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
 $typical-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -22,3 +23,4 @@ $typical-transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $typical-transition-background: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $typical-transition-boxshadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $typical-transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$typical-transition-opacity: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
