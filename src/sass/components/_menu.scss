@@ -75,7 +75,7 @@ body.menu-open {
         .menu-close:hover &,
         .menu-close:focus & {
             stroke: $accent-red-color-D41443;
-            transform: rotate(90deg) scale(1.2);
+            transform: rotate(90deg) scale(1.3);
         }
 }
         .menu-button {
@@ -130,10 +130,12 @@ body.menu-open {
         color: $text-white-color-FFFFFF;
         padding-top: 13px;
         padding-bottom: 11px;
-        transition: $typical-transition-color;
+        transform: scale(1);
+        transition: $typical-transition-color, $typical-transition-transform;
     
         &:hover,
         &:focus {
+            transform: scale(1.1);
             color: $accent-red-color-D41443;
         }
 }
@@ -149,16 +151,30 @@ body.menu-open {
 .socials__item:not(:last-child) {
     margin-right: 30px;
 }
-.socials__icon {
-    --color2: #D41443;
-    fill: #ffffff;
+
+.socials__link {
+    @include center;
+    background-color: #D41443;
+    border-radius: 50%;
     width: 34px;
     height: 34px;
+    transform: scale(1);
+    transition: $typical-transition-background, $typical-transition-transform;
+
+    &:hover, &:focus {
+        background-color: #ffffff;
+        transform: scale(1.1);
+    }
+}
+
+.socials__icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
     transition: $typical-transition-fill;
     
         .socials__link:hover & {
             fill: $accent-red-color-D41443;
-            --color2: #ffffff
         }
     }
     
@@ -176,7 +192,13 @@ body.menu-open {
     }
     
     .tel-number__link {
+        display: inline-flex;
         color: $accent-red-color-D41443;
         padding-left: 5px;
-        transition: scale 250ms $typical-cubic;
+        transform: scale(1);
+        transition: transform 250ms $typical-cubic;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 }
