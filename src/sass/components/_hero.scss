@@ -168,6 +168,7 @@
   transition: $typical-transition-background, $typical-transition-transform;
   letter-spacing: 0;
   transform: scale(1);
+  display: block;
 
   &:hover,
   &:focus {
