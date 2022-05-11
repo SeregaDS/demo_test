@@ -174,6 +174,7 @@
   transition: $typical-transition-background, $typical-transition-transform;
   letter-spacing: 0;
   transform: scale(1);
+  display: block;
 
   &:hover,
   &:focus {
@@ -242,7 +243,7 @@
 
   cursor: pointer;
   z-index: 101;
-
+  background-color: $text-white-color-FFFFFF;
   border: none;
   border-radius: 50%;
   width: 18px;
@@ -372,7 +373,6 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-style: 50px;
   border-radius: 50%;
   transition: 0.5s;
   opacity: 0.6;
