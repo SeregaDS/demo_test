@@ -10,8 +10,18 @@
     font-family: 'Titan One';
     color: $main-text-color-907E82;
     line-height: 2;
+    @media screen and (max-width: 479px) {
+      font-size: calc(8px + 1.5vw);
+    }
   }
-  &__description {
+  &__title {
+    @media screen and (max-width: 479px) {
+      display: inline-block;
+      width: 74%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: calc(12px + 1.5vw);
+    }
   }
   &__name {
     @media screen and (max-width: 479px) {
