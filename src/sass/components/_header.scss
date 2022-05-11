@@ -7,10 +7,6 @@
   @include mq(tablet) {
     padding-top: 32px;
   }
-
-  @include mq(desktop) {
-    padding-top: 36px;
-  }
 }
 
 .header__container {
@@ -128,8 +124,8 @@
 .nav__link {
   display: block;
   color: $text-white-color-FFFFFF;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   transition: $typical-transition-color, transform 250ms $typical-cubic;
 
   &:hover,
