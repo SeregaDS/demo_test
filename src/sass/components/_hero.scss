@@ -130,8 +130,11 @@
     margin-bottom: 16px;
   }
 }
-
+.test {
+  display: block;
+}
 .hero__item-title {
+  text-align: right;
   position: relative;
   z-index: 3;
 
@@ -147,6 +150,9 @@
   }
 }
 .hero__item-text {
+  font-family: 'DM Sans';
+  text-transform: lowercase;
+  display: block;
   @include fonts(400, 8px, 1.25);
 
   color: $bgc-white-color-FFFFFF;
