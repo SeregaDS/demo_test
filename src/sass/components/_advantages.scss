@@ -53,11 +53,9 @@
   }
   @include mq(tablet) {
     @include font(700, 14px, 1.74);
-    margin-bottom: 36px;
   }
   @include mq(desktop) {
     @include fonts(700, 16px, 1.74, 0.02em);
-    margin-bottom: 40px;
   }
   &--icon2::before {
     background-image: -webkit-image-set(
