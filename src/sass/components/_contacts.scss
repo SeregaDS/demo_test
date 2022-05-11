@@ -22,6 +22,17 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
+    // display: block;
+
+    // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    // &:hover .image__chicago::before,
+    // &:hover .image__los-angeles::before,
+    // &:hover .image__new-york::before {
+    //   opacity: 0.5;
+    //   transform: translateY(0);
+    //   padding: 0;
+    // }
 
     @include mq(tablet) {
       display: grid;
@@ -51,6 +62,20 @@
 
     @include mq(desktop) {
       padding: 40px;
+    }
+  }
+
+  .border__chicago {
+    border-radius: 24px;
+    overflow: hidden;
+    display: block;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .image__chicago::before {
+      opacity: 0.5;
+      transform: translateY(0);
+      padding: 0;
     }
   }
 
@@ -483,5 +508,138 @@
     @include mq(tablet) {
       font-size: 22px;
     }
+  }
+}
+
+.image__chicago {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: text-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2em #ff0101, 1px 1px 0.2em #6946d6;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-image: url(../images/contacts/chicago.jpg);
+    background-size: cover;
+    background-position: top right;
+    transform: translateY(100%);
+    opacity: 0;
+
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.image__los-angeles {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: text-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2em #ff0101, 1px 1px 0.2em #6946d6;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-image: url(../images/contacts/los-angeles.jpg);
+    background-size: cover;
+    background-position: top right;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.image__new-york {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: text-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2em #ff0101, 1px 1px 0.2em #6946d6;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-image: url(../images/contacts/new-york.jpg);
+    background-size: cover;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contacts__position {
+  position: sticky;
+}
+
+.border__chicago {
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .image__chicago::before {
+    opacity: 0.5;
+    transform: translateY(0);
+    padding: 0;
+  }
+}
+
+.border__los-angeles {
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .image__los-angeles::before {
+    opacity: 0.5;
+    transform: translateY(0);
+    padding: 0;
+  }
+}
+
+.border__new-york {
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .image__new-york::before {
+    opacity: 0.5;
+    transform: translateY(0);
+    padding: 0;
   }
 }
